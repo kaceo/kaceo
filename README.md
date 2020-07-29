@@ -12,6 +12,7 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 ![animated](https://github.com/kaceo/kaceo/blob/master/m0nica-octocat-rotating.gif)
 </div> --->
 
+<!---
 - Learning in public on [Twitch](https://www.twitch.tv/blacktechdiva) or 
 [monica.dev](https://www.monica.dev) 📹 ✍🏾
 
@@ -35,3 +36,4 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 - ⚡ Fun fact: ...
 
 <a href="https://github.com/sponsors/M0nica"><img align="left" width="150" height="150" src="https://github.com/M0nica/M0nica/raw/main/octomonica/m0nica-octocat-rotating.gif?raw=true" style="max-width:100%;"></a>
+--->
