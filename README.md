@@ -1,20 +1,16 @@
 #  Hi, I'm KaceO 👋🏾 👩🏾‍💻
-![banner cartoon illustration](https://github.com/kaceo/kaceo/blob/master/gh-header-image-cropped.png)
+<!--- ![banner cartoon illustration](https://github.com/kaceo/kaceo/blob/master/gh-header-image-cropped.png) --->
 
 ---
 I'm a software engineer who is passionate about open-source and applications in arts.
 Some technologies I enjoy working with include 
 VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL. 
-I recently was selected to be an inaugural [GitHub Star 🌟](https://stars.github.com/)
-based on my involvement in the tech community.  
 
 ---
 ## Find me around the web 🌎:
-<div align="left" width="150px" height="150px">
-  
+<!--- <div align="left" width="150px" height="150px">
 ![animated](https://github.com/kaceo/kaceo/blob/master/m0nica-octocat-rotating.gif)
-
-</div>
+</div> --->
 
 - Learning in public on [Twitch](https://www.twitch.tv/blacktechdiva) or 
 [monica.dev](https://www.monica.dev) 📹 ✍🏾
