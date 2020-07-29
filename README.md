@@ -10,7 +10,7 @@ based on my involvement in the tech community.
 
 ---
 ## Find me around the web 🌎:
-[!(m0nica-octocat-rotating.gif?raw=true align="left" width="150" height="150")](https://github.com/sponsors/M0nica)
+[![animated](m0nica-octocat-rotating.gif align="left" width="150" height="150")](https://github.com/sponsors/M0nica)
 
 - Learning in public on [Twitch](https://www.twitch.tv/blacktechdiva) or 
 [monica.dev](https://www.monica.dev) 📹 ✍🏾
