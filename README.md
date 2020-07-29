@@ -1,5 +1,5 @@
 #  Hi, I'm KaceO 👋🏾 👩🏾‍💻
-![banner cartoon illustration](gh-header-image-cropped.png)
+![banner cartoon illustration](https://github.com/kaceo/kaceo/blob/master/gh-header-image-cropped.png)
 
 ---
 I'm a software engineer who is passionate about open-source and applications in arts.
@@ -12,7 +12,7 @@ based on my involvement in the tech community.
 ## Find me around the web 🌎:
 <div align="left" width="150px" height="150px">
   
-![animated](m0nica-octocat-rotating.gif)
+![animated](https://github.com/kaceo/kaceo/blob/master/m0nica-octocat-rotating.gif)
 
 </div>
 
