@@ -12,7 +12,7 @@ based on my involvement in the tech community.
 ## Find me around the web 🌎:
 <div align="left" width="150" height="150">
   
-![animated](m0nica-octocat-rotating.gif?s=150)
+![animated](m0nica-octocat-rotating.gif|w=150px)
 
 </div>
 
