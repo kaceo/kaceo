@@ -10,17 +10,14 @@ based on my involvement in the tech community.
 
 ---
 ## Find me around the web 🌎:
-[![](https://github.com/M0nica/M0nica/raw/main/octomonica/m0nica-octocat-rotating.gif?raw=true align="left" width="150" height="150")](https://github.com/sponsors/M0nica)
+[!(m0nica-octocat-rotating.gif?raw=true align="left" width="150" height="150")](https://github.com/sponsors/M0nica)
 
 - Learning in public on [Twitch](https://www.twitch.tv/blacktechdiva) or 
-[monica.dev](https://www.monica.dev)
-<g-emoji class="g-emoji" alias="video_camera" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f9.png">📹</g-emoji> ✍🏾
+[monica.dev](https://www.monica.dev) 📹 ✍🏾
 
-- Tinkering with interactions on [Codepen](https://codepen.io/m0nica) 
-<g-emoji class="g-emoji" alias="ping_pong" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3d3.png">🏓</g-emoji>
+- Tinkering with interactions on [Codepen](https://codepen.io/m0nica) 🏓
 
-- Sharing updates on [LinkedIn](https://www.linkedin.com/in/monicampowell/)
-<g-emoji class="g-emoji" alias="briefcase" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bc.png">💼</g-emoji>
+- Sharing updates on [LinkedIn](https://www.linkedin.com/in/monicampowell/) 💼
 
 ---
 ## test
