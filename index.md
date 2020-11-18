@@ -10,5 +10,5 @@ we like
 
 instead of going to {{ "/" }}
 
-we got to {{ "/" | relative_url }}
+we go to {{ "/" | relative_url }}
 

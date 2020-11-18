@@ -1,14 +1,8 @@
 ---
 layout: default
 ---
-
-
 <div class="container">
-
-
   {{ content }}
-
-
 
   <div class="section">
 
@@ -29,26 +23,20 @@ layout: default
       </div>
       {% endfor %}
 
+    </div>
   </div>
-  <br>
   <hr>
-
-
-
-
-
-
-  <ul class="posts">
-    {% for post in site.posts %}
+  <div class="section">
+    <ul class="posts">
+      {% for post in site.posts %}
       <li>
         <span>{{ post.date | date_to_string }}</span>
         &raquo;
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         {{ post.url | relative_url }}
       </li>
-    {% endfor %}
-  </ul>
-
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-
 
