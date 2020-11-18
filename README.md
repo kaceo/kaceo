@@ -37,3 +37,5 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 
 <a href="https://github.com/sponsors/M0nica"><img align="left" width="150" height="150" src="https://github.com/M0nica/M0nica/raw/main/octomonica/m0nica-octocat-rotating.gif?raw=true" style="max-width:100%;"></a>
 --->
+
+See you around.
