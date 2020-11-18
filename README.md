@@ -1,19 +1,19 @@
 #  Hi, I'm KaceO 👋🏾 👩🏾‍💻
-<!--- ![banner cartoon illustration](https://github.com/kaceo/kaceo/blob/master/gh-header-image-cropped.png) --->
+<!--- ![banner cartoon illustration](https://github.com/kaceo/kaceo/blob/master/source/assets/gh-header-image-cropped.png) --->
 
 ---
 I'm a software engineer who is passionate about open-source and applications in arts.
-Some technologies I enjoy working with include 
-VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL. 
+Some technologies I enjoy working with include
+VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 
 ---
 ## Find me around the web 🌎:
 <!--- <div align="left" width="150px" height="150px">
-![animated](https://github.com/kaceo/kaceo/blob/master/m0nica-octocat-rotating.gif)
+![animated](https://github.com/kaceo/kaceo/blob/master/source/assets/m0nica-octocat-rotating.gif)
 </div> --->
 
 <!---
-- Learning in public on [Twitch](https://www.twitch.tv/blacktechdiva) or 
+- Learning in public on [Twitch](https://www.twitch.tv/blacktechdiva) or
 [monica.dev](https://www.monica.dev) 📹 ✍🏾
 
 - Tinkering with interactions on [Codepen](https://codepen.io/m0nica) 🏓
@@ -25,7 +25,7 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 ## test
 
 - 👋
-- ✨ _special_ ✨ 
+- ✨ _special_ ✨
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
