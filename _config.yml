@@ -1,2 +1,7 @@
+baseurl: /kaceo/
+timezone: Asia/Singapore
+permalink: /:categories/:year/:month/:day/:title:output_ext
+#permalink: pretty
+
 brandname: KaceO-Web
 copyright: 2020 Kace Ong
