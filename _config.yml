@@ -8,19 +8,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: KaceO
 
 # Your name to show in the footer
-author: Some Person
+author: KaceO
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
+  Organisation: "https://telematiq.org"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -41,13 +41,13 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
-#  reddit: yourname
+  email: "kaceong@gmail.com"
+  facebook: ong.kace
+  github: kaceo
+#  twitter:
+#  patreon:
+#  youtube:
+  reddit: mamborambo
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -219,13 +219,14 @@ defaults:
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
-  - CNAME
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - screenshot.png
   - docs/
+  #- CNAME
+
 
 plugins:
   - jekyll-paginate
