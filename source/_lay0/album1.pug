@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+h1 ALBUMS IN PUG
+
+| {% assign image_files = site.static_files | where: "image", true %}
+| {% for myimage in image_files %}
+div
+  img(src="{{ myimage.path | relative_url }}")
+  hr
+
+| {% endfor %}

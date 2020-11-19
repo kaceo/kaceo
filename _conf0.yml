@@ -1,0 +1,23 @@
+source: source
+baseurl: /kaceo/
+timezone: Asia/Singapore
+permalink: /:categories/:year/:month/:day/:title:output_ext
+#permalink: pretty
+markdown: kramdown
+
+brandname: KaceO-Web
+copyright: 2020 Kace Ong
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+paginate: 10
+paginate_path: "/archives/page:num/"
+
+
+# already included in Github Pages
+plugins:
+  - jekyll-paginate

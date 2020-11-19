@@ -39,3 +39,5 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 --->
 
 See you around.
+![Build and Deploy Static Pages](https://github.com/kaceo/kaceo/workflows/Build%20and%20Deploy%20Static%20Pages/badge.svg)
+
