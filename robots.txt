@@ -1,1 +1,1 @@
-Sitemap: /kaceo/sitemap.xml
+Sitemap: /sitemap.xml
