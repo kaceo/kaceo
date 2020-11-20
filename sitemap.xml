@@ -9,10 +9,13 @@
 <lastmod>2020-02-28T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>/aboutme/</loc>
+<loc>/about</loc>
 </url>
 <url>
-<loc>/album/</loc>
+<loc>/aboutme</loc>
+</url>
+<url>
+<loc>/album</loc>
 </url>
 <url>
 <loc>/</loc>
@@ -21,7 +24,7 @@
 <loc>/archives/</loc>
 </url>
 <url>
-<loc>/oindex/</loc>
+<loc>/oindex</loc>
 </url>
 <url>
 <loc>/tags/</loc>
