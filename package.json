@@ -1,0 +1,16 @@
+{
+  "name": "kaceo-personal-site",
+  "version": "1.0.0",
+  "description": "Personal static site hosted on GH Pages",
+  "repository": "https://github.com/kaceo/kaceo.git",
+  "author": "Kace at Telematique <kaceong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "eleventy --serve --port 4000",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "moment": "^2.29.1"
+  }
+}

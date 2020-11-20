@@ -17,20 +17,20 @@ jobs:
         submodules: true
 
     - name: Build Static Site 🔧
+      #run: |
+      #  docker run \
+      #  -v ${{ github.workspace }}:/srv/jekyll \
+      #  -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+      #  jekyll/builder:latest /bin/bash \
+      #  -c "chmod 777 /srv/jekyll && jekyll build --future"
+      #
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
       run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll \
-        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash \
-        -c "chmod 777 /srv/jekyll && jekyll build --future"
-      #
-      # run: |
-      #  npm install
-      #  npm run-script build
-      #
-      # uses: actions/setup-node@v1
-      # with:
-      #  node-version: 12
+        npm install
+        npm run-script build
+
       # run: npm ci
       # run: npm test
       # run: npm run build

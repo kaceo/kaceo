@@ -8,6 +8,29 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 
 ---
 ## Find me around the web 🌎:
+
+<a href="https://www.kaceong.com">Homepage</a> |
+<a href="https://github.com/kaceo/kaceo">Homepage Repo</a>
+
+![Github Action Deploy Static Pages](https://github.com/kaceo/kaceo/workflows/Build%20and%20Deploy%20Static%20Pages/badge.svg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--- <div align="left" width="150px" height="150px">
 ![animated](https://github.com/kaceo/kaceo/blob/master/source/assets/m0nica-octocat-rotating.gif)
 </div> --->
@@ -38,9 +61,4 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 <a href="https://github.com/sponsors/M0nica"><img align="left" width="150" height="150" src="https://github.com/M0nica/M0nica/raw/main/octomonica/m0nica-octocat-rotating.gif?raw=true" style="max-width:100%;"></a>
 --->
 
-See you around.
 
-
-<a href="https://github.com/kaceo/kaceo">Website</a>
-
-![Build and Deploy Static Pages](https://github.com/kaceo/kaceo/workflows/Build%20and%20Deploy%20Static%20Pages/badge.svg)
