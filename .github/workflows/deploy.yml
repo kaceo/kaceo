@@ -16,7 +16,11 @@ jobs:
         # persist-credentials: false
         submodules: true
 
-    - name: Build Static Site 🔧
+    - name: Node Environment 🔧
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
       #run: |
       #  docker run \
       #  -v ${{ github.workspace }}:/srv/jekyll \
@@ -24,9 +28,8 @@ jobs:
       #  jekyll/builder:latest /bin/bash \
       #  -c "chmod 777 /srv/jekyll && jekyll build --future"
       #
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12
+
+    - name: Build Static Site 🔧
       run: |
         npm install
         npm run-script build
@@ -47,7 +50,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: _site
-        #CLEAN: true
+        CLEAN: true
         COMMIT_MESSAGE: 'Publishing'
 
       # Cecilapp/GitHub-Pages-deploy
