@@ -1,6 +1,7 @@
 ---
 title: Welcome to the Jungle
 layout: front
+permalink: /oindex
 ---
 
 Behold the strange place that

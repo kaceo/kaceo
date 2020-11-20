@@ -13,22 +13,47 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@v2.3.1
       with:
-        persist-credentials: false
+        # persist-credentials: false
+        submodules: true
 
-    - name: Install and Build 🔧
+    - name: Build Static Site 🔧
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash \
         -c "chmod 777 /srv/jekyll && jekyll build --future"
+      #
       # run: |
       #  npm install
       #  npm run-script build
+      #
+      # uses: actions/setup-node@v1
+      # with:
+      #  node-version: 12
+      # run: npm ci
+      # run: npm test
+      # run: npm run build
+      #
+      # uses: chabad360/hugo-actions@master
+      # with:
+      #   buildPath: 'public'
+      #   args: --gc --minify --cleanDestinationDir
+      #
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@3.6.2
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: _site
+        #CLEAN: true
+        COMMIT_MESSAGE: 'Publishing'
+
+      # Cecilapp/GitHub-Pages-deploy
+      # env:
+      #   GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #   BUILD_DIR: _site
+      #   #JEKYLL_SITE: NO or YES
+      #   EMAIL: kaceong@gmail.com
+      #   CNAME: www.kaceong.com
