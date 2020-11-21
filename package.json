@@ -6,11 +6,15 @@
   "author": "Kace at Telematique <kaceong@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "eleventy --serve --port 4000",
-    "build": "eleventy"
+    "test": "eleventy --serve --config=source/config.eleventy.js",
+    "build": "NODE_ENV=production eleventy --config=source/config.eleventy.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "eleventy-plugin-pwa": "^1.0.8",
+    "js-yaml": "^3.14.0",
     "moment": "^2.29.1"
   }
 }

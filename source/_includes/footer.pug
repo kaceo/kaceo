@@ -1,0 +1,35 @@
+footer
+  .container-md.beautiful-jekyll-footer
+    .row
+      .col-xl-8.offset-xl-2.col-lg-10.offset-lg-1
+
+        //include /social-networks-links.html
+
+        //if page.footer-extra
+        //  .footer-custom-content
+        //    for file in page.footer-extra
+        //      include {{ file }}
+
+        p.copyright.text-muted
+
+          if site.author
+            | {{ site.author }}
+            | &nbsp;&bull;&nbsp;
+
+          | {{ site.time | date: '%Y' }}
+
+          if site.url-pretty
+            | &nbsp;&bull;&nbsp;
+            span.author-site
+              if site.url-canonical
+                a(href="{{ site.url-canonical }}")
+                  | {{ site.url-pretty }}
+              else
+                a(href="{{ '' | absolute_url }}")
+                  | {{ site.url-pretty }}
+
+        p.theme-by.text-muted
+          | Powered by
+          |
+          a(href="https://beautifuljekyll.com") Beautiful Jekyll
+

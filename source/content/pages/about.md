@@ -1,9 +1,12 @@
 ---
-permalink: about/index.html
+permalink: about/
 
 title: All About Me!
 
 ---
+
+{{ '/myDir' | url}} is good
+
 
 div
   h1 About

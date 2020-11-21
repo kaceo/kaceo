@@ -1,7 +1,19 @@
 ---
-layout: base
+layout: default
 # Page Layout
 ---
 
 .container
   | !{content}
+
+| !{site.description}
+hr
+each t in travel
+  div #{t.city}, #{t.country}
+hr
+script.
+  //console.log(site)
+  // console.log(this)
+
+- var eee = "/about"
+p Go to #{eee}

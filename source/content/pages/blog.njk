@@ -1,5 +1,5 @@
 ---
-permalink: blog/index.html
+permalink: blog/
 ---
 
 {% set activeSection = "blog" %}
@@ -17,7 +17,12 @@ permalink: blog/index.html
 
         <p class="c-suptitle">Thoughts &amp; ramblings</p>
         <h1 class="c-h1  c-h1--invert">Blog archives</h1>
-        <p class="c-txtintro">I write about whatever piques my interest at the moment. I just hope it will help me remember it all when I am old, gray and nodding by the fire. Read on or hit the <a href="/feed.xml">RSS feed</a> if you're so inclined.</p>
+        <p class="c-txtintro">I write about whatever piques
+         my interest at the moment. I just hope it
+         will help me remember it all when I am old,
+         gray and nodding by the fire. Read on or hit the
+         <a href="{{ '/feed.xml' | url }}">RSS feed</a>
+          if you're so inclined.</p>
 
       </div>
     </div>
@@ -33,7 +38,8 @@ permalink: blog/index.html
         <li>
           <article class="c-blogteaser">
             <p class="c-blogteaser__date"><time datetime="{{ post.date | date('YYYY-MM-DD') }}">{{ post.date|date("MMMM Do, Y") }}</time></p>
-            <h2 class="c-blogteaser__title"><a class="c-blogteaser__link" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <h2 class="c-blogteaser__title">
+            <a class="c-blogteaser__link" href="{{ post.url|url }}">{{ post.data.title }}</a></h2>
           </article>
         </li>
         {% if loop.last %}</ul>{% endif %}

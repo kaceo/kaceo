@@ -1,0 +1,39 @@
+---
+layout: base
+# Default Layout
+
+---
+
+//include /nav.html
+
+| !{ content }
+
+
+//include /footer.pug
+
+p Author is #{ site.author }
+p I am at #{ site.url }
+p Under #{ site.baseUrl }
+
+
+- var var1 =  '/sitemap.xml'
+- var var2 = '{{var1 | url}}'
+- var var3 = 'The tide is high'
+- var var99 = ` my ${var3} is \${this.slug(data.var3)}  `
+
+p Filtered Sitemap is #{ var2 }
+
+p Another is #{ var99 }
+
+ul
+each i in cloud
+  li #{ i.host }, #{ i.status }
+
+- var myFunc = function(p) {
+-   return {heading: "Sport"+p, description: "Monkey" }
+- }
+
+p Get  #{ myFunc(10).heading }
+
+
+include /test.njk

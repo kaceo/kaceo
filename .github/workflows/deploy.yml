@@ -10,16 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+
     - name: Checkout 🛎️
       uses: actions/checkout@v2.3.1
       with:
         # persist-credentials: false
         submodules: true
 
+
     - name: Node Environment 🔧
       uses: actions/setup-node@v1
       with:
         node-version: 12
+
+
+    - name: Build Static Site 🔧
+      run: |
+        npm install
+        npm run-script build
+
 
       #run: |
       #  docker run \
@@ -27,22 +36,7 @@ jobs:
       #  -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
       #  jekyll/builder:latest /bin/bash \
       #  -c "chmod 777 /srv/jekyll && jekyll build --future"
-      #
 
-    - name: Build Static Site 🔧
-      run: |
-        npm install
-        npm run-script build
-
-      # run: npm ci
-      # run: npm test
-      # run: npm run build
-      #
-      # uses: chabad360/hugo-actions@master
-      # with:
-      #   buildPath: 'public'
-      #   args: --gc --minify --cleanDestinationDir
-      #
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.7.1
@@ -52,11 +46,5 @@ jobs:
         FOLDER: _site
         CLEAN: true
         COMMIT_MESSAGE: 'Publishing'
-
-      # Cecilapp/GitHub-Pages-deploy
-      # env:
-      #   GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #   BUILD_DIR: _site
-      #   #JEKYLL_SITE: NO or YES
-      #   EMAIL: kaceong@gmail.com
+      #   JEKYLL_SITE: NO
       #   CNAME: www.kaceong.com

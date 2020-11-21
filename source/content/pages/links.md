@@ -1,7 +1,16 @@
 ---
-layout: home
-title: SO wierd
+permalink: links/
 ---
+
+This is the {{ title }}
+
+_{{ special }}_
+
+My description is {{ site.description }}
+
+I have visited
+{{ travel }}
+
 
 # Welcome to my world
 

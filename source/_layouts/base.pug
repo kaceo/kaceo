@@ -19,17 +19,15 @@ common-js:
   - "/assets/js/beautifuljekyll.js"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-{% include 'head.njk' %}
+doctype html
+html(lang="en")
 
-<body>
-{ % include gtm_body.html % }
+  head
+    include /head.pug
 
-  { % include nav.html % }
-  {{ content | safe }}
-  { % include footer % }
+  body
+    //include /gtm_body.html
 
-{% include 'post-scripts.njk' %}
-</body>
-</html>
+    | !{ content }
+
+    include /post-scripts.pug
