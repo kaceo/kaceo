@@ -1,4 +1,8 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>KaceO</title><meta name="author" content="Kace Ong"><meta name="description"><link rel="alternate" type="application/rss+xml" title="KaceO" href="/feed.xml"><!-- include gtag.html--><!-- include gtm_head.html--><!-- include google_analytics.html--><meta property="og:site_name" content="KaceO"><meta property="og:title" content="KaceO"><meta property="og:description"><meta property="og:image" content="{{ img | absolute_url }}"><meta property="og:type" content="website"><meta property="og:url" content="{{ page.url | absolute_url | strip_index }}"><link rel="canonical" href="{{ page.url | absolute_url | strip_index }}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@{{ site.social-network-links.twitter }}"><meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}"><meta property="twitter:title" content="KaceO"><meta property="twitter:description"><meta name="twitter:image" content="!{ img | absolute_url }"><link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"></head><body><!--include /gtm_body.html--><!--include /nav.html--><div class="container"><h1>Sample blog post</h1><hr/><p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>KaceO</title><meta name="author" content="Kace Ong"><meta name="description"><link rel="alternate" type="application/rss+xml" title="KaceO" href="/feed.xml"><!-- include gtag.html--><!-- include gtm_head.html--><!-- include google_analytics.html--><meta property="og:site_name" content="KaceO"><meta property="og:title" content="KaceO"><meta property="og:description"><meta property="og:image" content="{{ img | absolute_url }}"><meta property="og:type" content="website"><meta property="og:url" content="{{ page.url | absolute_url | strip_index }}"><link rel="canonical" href="{{ page.url | absolute_url | strip_index }}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@{{ site.social-network-links.twitter }}"><meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}"><meta property="twitter:title" content="KaceO"><meta property="twitter:description"><meta name="twitter:image" content="!{ img | absolute_url }"><link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"><!-- in your header templates--><script>if ("serviceWorker" in navigator)
+  navigator.serviceWorker.register("/service-worker.js");</script></head><body><!--include /gtm_body.html-->
+//include /nav.html
+
+<div class="container"><h1>Sample blog post</h1><hr/><p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
 <p><strong>Here is some bold text</strong></p>
 <h2>Here is a secondary heading</h2>
 <p>Here's a useless table:</p>
@@ -63,34 +67,27 @@ foo(3)
 <h3>Error</h3>
 <p>{: .box-error}
 <strong>Error:</strong> This is an error box.</p>
-</div><!--include /footer.pug--><p>Author is Kace Ong</p><p>I am at https://www.kaceong.com</p><p>Under /kaceo/</p><p>Filtered Sitemap is {{var1 | url}}</p><p>Another is  my The tide is high is ${this.slug(data.var3)}  </p><ul></ul><li>bigben.telematiq.org, true</li><li>laksa.telematiq.org, true</li><p>Get  Sport10</p><div>
-  <h2> Quick Links (NJK)</h2>
-  <p>title {{ title }}</p>
-  <ul>
-    <li>
-      <a href="{{ '/' | url }}"> Home</a>
-    </li>
-    <li>
-      <a href="{{ '/about/' | url }}"> About</a>
-    </li>
-    <li>
-      <a href="{{ '/blog/' | url }}"> Blog</a>
-    </li>
-    <li>
-      <a href="{{ '/work/' | url }}"> Work</a>
-    </li>
-    <li>
-      <a href="{{ '/404.html' | url }}"> Error</a>
-    </li>
-    <li>
-      <a href="{{ '/sitemap.xml' | url }}"> Site Map</a>
-    </li>
-    <li>
-      <a href="{{ '/feed.xml' | url }}"> RSS feed</a>
-    </li>
-  </ul>
 </div>
-<hr>
+
+div
+  h2 Quick Links (PUG)
+  ul
+    li
+      a(href="#{site.url}/") Home
+    li
+      a(href="#{site.url}/about/") About
+    li
+      a(href="#{site.url}/blog/") Blog
+    li
+      a(href="#{site.url}/work/") Work
+    li
+      a(href="#{site.url}/404.html") Error
+    li
+      a(href="#{site.url}/sitemap.xml") Site Map
+    li
+      a(href="#{site.url}/feed.xml") RSS feed
+hr
+
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><script>(function($){
   $(function(){
     $('.sidenav').sidenav();
