@@ -1,8 +1,6 @@
 ---
 permalink: about/
-
 title: All About Me!
-
 ---
 
 {{ '/myDir' | url}} is good

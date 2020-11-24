@@ -6,6 +6,7 @@
   "author": "Kace at Telematique <kaceong@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf _site",
     "test": "eleventy --serve --config=source/config.eleventy.js",
     "build": "NODE_ENV=production eleventy --config=source/config.eleventy.js"
   },
@@ -15,6 +16,16 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
     "eleventy-plugin-pwa": "^1.0.8",
     "js-yaml": "^3.14.0",
-    "moment": "^2.29.1"
-  }
+    "moment": "^2.29.1",
+    "rimraf": "^2.6.2"
+  },
+  "markup": [
+    "@code-blocks/eleventy-plugin",
+    "@code-blocks/charts",
+    "@code-blocks/graphviz",
+    "@code-blocks/math",
+    "@code-blocks/music",
+    "@code-blocks/tables",
+    "@code-blocks/prism"
+  ]
 }

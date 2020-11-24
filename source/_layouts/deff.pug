@@ -19,7 +19,7 @@ p Under #{ site.baseUrl }
 - var var1 =  '/sitemap.xml'
 - var var2 = '{{var1 | url}}'
 - var var3 = 'The tide is high'
-- var var99 = ` my ${var3} is \${this.slug(data.var3)}  `
+- var var99 = ` my ${var3} is ${var3.capitalize}  `
 
 p Filtered Sitemap is #{ var2 }
 
@@ -34,6 +34,7 @@ each i in cloud
 - }
 
 p Get  #{ myFunc(10).heading }
+
 
 
 include /test.njk

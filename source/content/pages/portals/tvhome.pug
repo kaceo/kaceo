@@ -1,0 +1,69 @@
+---
+permalink: tvhome/
+dynamicPermalink: false
+
+layout: tvbase
+title: A TV Homee Here
+myfile: /abc/ded
+#cfile:  '{{title | slug}}'
+dfile:  'So long and fishes'
+
+eleventyComputed:
+  efile: 'something wierd'
+  #ffile: '{{ title | slug }}'
+  ##gfile: '{{ "/about" | url }}'
+
+#  eleventyNavigation:
+#    key: "{{ title }}"
+#    parent: "{{ parent }}"
+#- var bfile = {{ title | slug }}
+#permalinkBypassOutputDir: true
+#setDynamicPermalinks(false);
+#dynamicPermalink: false
+#eleventyExcludeFromCollections:
+templateEngineOverride: pug,md
+#templateEngineOverride: pug
+
+---
+.container.center-align
+  h1 TV Home
+  .row
+    .col.s4.blue.lighten-5
+      b Home 7
+      p #{ bfile }
+
+    .col.s4.green.lighten-5
+      b Home 8
+      p #{ cfile }
+
+    .col.s4.red.lighten-5
+      b Home 9
+      p #{ dfile }
+
+  .divider
+  .row
+    .col.s4.teal.lighten-5
+      b Home 1
+      p #{ title }
+
+    .col.s4.cyan.lighten-5
+      b Home 2
+      p #{ title | slug }
+
+    .col.s4.lime.lighten-5
+      b Home 3
+      p
+
+  .divider
+  .row
+    .col.s4.orange.lighten-5
+      b Home 4
+      p #{efile }
+
+    .col.s4.brown.lighten-5
+      b Home 5
+      p= ffile
+
+    .col.s4.yellow.lighten-5
+      b Home 6
+      p= gfile

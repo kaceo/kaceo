@@ -1,0 +1,236 @@
+---
+# this layout is designed to work on Smart TV Philips
+# so that it can be called from TV's web browser
+---
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=1920,height=1080')
+
+    title= title
+
+    // include CAPH 3.0.1 default package
+    link(rel='stylesheet' type='text/css'
+      href="lib/caph/3.0.1/caph.min.css")
+    // include jQuery file
+    script(type="text/javascript"
+      src="lib/caph/3.0.1/bower_components/jquery/dist/jquery.min.js")
+    // include the CAPH
+    script(type="text/javascript"
+      src="lib/caph/3.0.1/caph-jquery.min.js")
+
+    style.
+      .card {
+        border: 3px solid transparent;
+        width: 150px;
+        height: 140px;
+        margin-bottom: 20px;
+          margin-right: 20px;
+          float: left;
+      }
+      .card .front , .card .back {
+        box-sizing : border-box;
+        position : absolute;
+        -webkit-backface-visibility : hidden;
+        -webkit-transition : -webkit-transform 0.3s linear 0s;
+        -webkit-transform : perspective(600px);
+        width : 150px;
+        height : 140px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .card.selected .front{
+        -webkit-transform : rotateY(180deg);
+      }
+      .card.selected .back{
+        -webkit-transform : rotateY(0);
+      }
+      .card .back{
+        -webkit-transform : rotateY(180deg);
+      }
+      .step-box {
+        padding: 17px;
+        width: 950px;
+        background-color:#f1f1f1;
+      }
+      .step-box > .title > b:first-child {
+        font-size:20px;
+      }
+      .step-box > .code {
+        margin-top: 20px;
+        color:#666666;
+        border-left: 4px solid #009688;
+        width: 80%;
+        margin-left: 68px;
+        padding-left: 2%;
+        line-height: 170%;
+        background-color: white;
+      }
+      .list-container {
+        height: 330px;
+      }
+      a {
+        text-decoration : none;
+      }
+      a:link {
+        color :gray;
+      }
+      a:visited {
+        color : gray;
+      }
+      html, body {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+      }
+      .wrapper {
+        padding: 5px 20px;
+        font-family : tahoma;
+        font-size : 17px;
+        width: 1000px;
+        font-weight: 500;
+      }
+      .wrapper h1 {
+        font-weight: 500;
+      }
+      .footer {
+        margin : 30px 0;
+      }
+      .content {
+        margin : 40px 0;
+      }
+
+
+  body
+    | !{ content }
+
+
+
+    .wrapper
+      //-------------------------------------
+      .header
+        h1
+          | CAPH key navigation Sample
+          span(style='font-size:70%') for jQuery
+        br
+        div(style='font-size:100%')
+          div(style='font-size: 1.5em;') CAPH key navigation?
+          | Key Navigation is an essential utility to use TV's remote
+
+          ul
+            li
+              b Simple & Easy
+              |  : Add only 'focusable' attribute
+            li
+              b Customizable
+              |  : Use various event handlers
+            li
+              b Convenient
+              |  : CAPH handles 4 direction keys internally
+
+            a(href='../../../main.html?type=jquery&doc=tutorial&p1=7'
+              target='_top') More details, click here!
+
+      //-------------------------------------
+      .content
+        .list-container
+          .card(focusable data-focusable-initial-focus='true')
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+          .card(focusable)
+            .front
+              img(src='./image/1.jpg')
+            .back
+              img(src='./image/2.jpg')
+        br
+        div(style='font-style:italic') This sample is packaged based on caph 3.0.1. You can try with arrows keys.
+        br
+        br
+
+      //-------------------------------------
+      .footer
+        a.info(style='width:300px; text-decoration: none; font-size:18px;'
+          href='./keynavigationjQuery.zip')
+          | >> Click link for download(keynavigationjQuery.zip)
+
+
+    //-script(type="text/javascript"
+    //-  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+    //- hef="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    //- href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    //- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    //-script(href="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    //-script(href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    //- script(src='/assets/tv/main.js')
+
+    script.
+      $(document).ready(function(){
+        $.caph.focus.activate(function(nearestFocusableFinderProvider, controllerProvider) {
+              controllerProvider.onFocused(function(event, originalEvent) {
+                $(event.currentTarget).css({
+              border: '3px solid red'
+            });
+              });
+
+              controllerProvider.onBlurred(function(event, originalEvent) {
+                $(event.currentTarget).css({
+              border : '3px solid transparent'
+            });
+              });
+
+            controllerProvider.onSelected(function(event, originalEvent){
+              $(event.currentTarget).toggleClass("selected");
+          });
+          });
+      });
+
+
+
+
+
+

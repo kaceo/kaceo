@@ -10,7 +10,6 @@ metadata:
   author:
     name: Boaty McBoatFace
     email: me@example.com
-#  <updated>{{ collections.essays | rssLastUpdatedDate }}</updated>
 
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -20,6 +19,7 @@ metadata:
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.essays | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>
 
   <author>
