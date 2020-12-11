@@ -1,5 +1,39 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>KaceO</title><meta name="author" content="Kace Ong"><meta name="description"><link rel="alternate" type="application/rss+xml" title="KaceO" href="/feed.xml"><!-- include gtag.html--><!-- include gtm_head.html--><!-- include google_analytics.html--><meta property="og:site_name" content="KaceO"><meta property="og:title" content="KaceO"><meta property="og:description"><meta property="og:image" content="{{ img | absolute_url }}"><meta property="og:type" content="website"><meta property="og:url" content="{{ page.url | absolute_url | strip_index }}"><link rel="canonical" href="{{ page.url | absolute_url | strip_index }}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@{{ site.social-network-links.twitter }}"><meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}"><meta property="twitter:title" content="KaceO"><meta property="twitter:description"><meta name="twitter:image" content="!{ img | absolute_url }"><link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"><!-- in your header templates--><script>if ("serviceWorker" in navigator)
-  navigator.serviceWorker.register("/service-worker.js");</script></head><body><!--include /gtm_body.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<title>Sample blog post</title>
+
+
+<meta name="author" content="Kace Ong">
+
+<meta name="description" content="">
+
+<meta name="keywords" content="special, ideas">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<main>
+
 //include /nav.html
 
 <div class="container"><h1>Sample blog post</h1><hr/><p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
@@ -40,7 +74,7 @@
 <p>How about a yummy crepe?</p>
 <p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe"></p>
 <p>It can also be centered!</p>
-<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe">{: .mx-auto.d-block :}</p>
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" :="" class="mx-auto.d-block" :=""></p>
 <p>Here's a code chunk:</p>
 <pre><code>var foo = function(x) {
   return(x + 5);
@@ -50,12 +84,11 @@ foo(3)
 <p>And here is the same code with syntax highlighting:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span><span class="token punctuation">(</span>x <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span></code></pre>
 <p>And here is the same code yet again but with line numbers:</p>
-<p>{ % highlight javascript linenos % }
+<p %="" endhighlight="" %="">{ % highlight javascript linenos % }
 var foo = function(x) {
 return(x + 5);
 }
-foo(3)
-{ % endhighlight % }</p>
+foo(3)</p>
 <h2>Boxes</h2>
 <p>You can add notification, warning and error boxes like this:</p>
 <h3>Notification</h3>
@@ -69,27 +102,14 @@ foo(3)
 <strong>Error:</strong> This is an error box.</p>
 </div>
 
-div
-  h2 Quick Links (PUG)
-  ul
-    li
-      a(href="#{site.url}/") Home
-    li
-      a(href="#{site.url}/about/") About
-    li
-      a(href="#{site.url}/blog/") Blog
-    li
-      a(href="#{site.url}/work/") Work
-    li
-      a(href="#{site.url}/404.html") Error
-    li
-      a(href="#{site.url}/sitemap.xml") Site Map
-    li
-      a(href="#{site.url}/feed.xml") RSS feed
-hr
+// { % include 'test.pug' %}
 
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><script>(function($){
-  $(function(){
-    $('.sidenav').sidenav();
-  }); // end of document ready
-})(jQuery); // end of jQuery name space</script></body></html>
+</main>
+
+
+
+
+
+
+</body>
+</html>

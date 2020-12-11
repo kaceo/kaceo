@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <language>en</language>
-    <title>KaceO - Blogposts Feed</title>
-    <description>The Online Playground of KaceO</description>
-    <link>https://www.kaceong.com</link>
-    <atom:link href="https://www.kaceong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 24 Nov 2020 07:34:39 +0000</pubDate>
-    <lastBuildDate>Tue, 24 Nov 2020 07:34:39 +0000</lastBuildDate>
-    <generator>Eleventy</generator>
-    
-      <item>
-        <title>Sample blog post</title>
-        <link>/entry/test-markdown/</link>
-        <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
-        <guid isPermaLink="true">https://www.kaceong.com/entry/test-markdown/</guid>
-        <description><![CDATA[
-          <p></p>
-          <p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>My Blog about Boats</title>
+  <subtitle>The Online Playground of KaceO</subtitle>
+  <link href="https://www.kaceong.com"
+   rel="alternative" type="text/html"/>
+  <link href="https://www.kaceong.com/feed.xml"
+   rel="self" type="application/atom+xml"/>
+  <updated>2020-02-28T00:00:00+00:00</updated>
+  <id></id>
+  <author>
+    <name>Kace Ong</name>
+    <email>me@example.com</email>
+  </author>
+  <entry>
+    <title>Sample blog post</title>
+    <link href="https://www.kaceong.com/entry/test-markdown/"/>
+    <updated>2020-02-28T00:00:00+00:00</updated>
+    <id>https://www.kaceong.com/entry/test-markdown/</id>
+    <content type="html"><![CDATA[
+      <p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
 <p><strong>Here is some bold text</strong></p>
 <h2>Here is a secondary heading</h2>
 <p>Here's a useless table:</p>
@@ -55,7 +57,7 @@
 <p>How about a yummy crepe?</p>
 <p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe"></p>
 <p>It can also be centered!</p>
-<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe">{: .mx-auto.d-block :}</p>
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" :="" class="mx-auto.d-block"></p>
 <p>Here's a code chunk:</p>
 <pre><code>var foo = function(x) {
   return(x + 5);
@@ -65,12 +67,11 @@ foo(3)
 <p>And here is the same code with syntax highlighting:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span><span class="token punctuation">(</span>x <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span></code></pre>
 <p>And here is the same code yet again but with line numbers:</p>
-<p>{ % highlight javascript linenos % }
+<p %="" endhighlight="">{ % highlight javascript linenos % }
 var foo = function(x) {
 return(x + 5);
 }
-foo(3)
-{ % endhighlight % }</p>
+foo(3)</p>
 <h2>Boxes</h2>
 <p>You can add notification, warning and error boxes like this:</p>
 <h3>Notification</h3>
@@ -83,8 +84,6 @@ foo(3)
 <p>{: .box-error}
 <strong>Error:</strong> This is an error box.</p>
 
-        ]]></description>
-      </item>
-    
-  </channel>
-</rss>
+    ]]></content>
+  </entry>
+</feed>

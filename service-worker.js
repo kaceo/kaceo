@@ -28,11 +28,35 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f5495ff99f948ae5c3be296f49fa4be7"
+    "revision": "57ca62c51dd133a2385f50bb78faf878"
   },
   {
     "url": "about/index.html",
-    "revision": "e8d6f0ca480695a3d484a903db76d00b"
+    "revision": "28580c27913504dbecaf3f0275004fa9"
+  },
+  {
+    "url": "admin/index.html",
+    "revision": "e44aa57431b4b3d752fa7c4bd8dfe158"
+  },
+  {
+    "url": "admin/previews/index.js",
+    "revision": "201da5ab96da9f63846f623b8bcafb12"
+  },
+  {
+    "url": "admin/previews/page.js",
+    "revision": "8343f1efa48dda326e4504ec17e620b0"
+  },
+  {
+    "url": "admin/previews/post.js",
+    "revision": "d40d8c9c0826a17c9290249fce3ec187"
+  },
+  {
+    "url": "assets/img/404-southpark.jpg",
+    "revision": "e0dd430e0d719ae0b489be47e522beda"
+  },
+  {
+    "url": "assets/img/unnamed.jpg",
+    "revision": "76c78480bd4c29b9d1565a59fba79643"
   },
   {
     "url": "assets/tv/caph-jquery.min.js",
@@ -100,51 +124,95 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/index.html",
-    "revision": "26adf223c27fda22579add81e84fe90d"
+    "revision": "2741bca481c034b34fe1416eefef7da7"
   },
   {
     "url": "catalog/index.html",
-    "revision": "16c39a9327de8f54175fc13edbdedbaa"
+    "revision": "29bbb9e48ff0262eea4e9c89616523f7"
+  },
+  {
+    "url": "cloud/ads/index.html",
+    "revision": "9f4ef343da77e22806156d7faeea8a4d"
   },
   {
     "url": "cloud/domains/index.html",
-    "revision": "fafb9c93228cd265703bcfde736d25ac"
+    "revision": "d4eb8354cff7aa32f4eb77f3ea4d4827"
+  },
+  {
+    "url": "cloud/gsites/index.html",
+    "revision": "1cd2a2bde1e53a8a2e9d94694b8d3ce0"
   },
   {
     "url": "cloud/hosts/index.html",
-    "revision": "0c2a8d225070cdd60d81abe2142e13c1"
+    "revision": "3650baccb1b7ee545225fc46be044f3d"
+  },
+  {
+    "url": "cloud/index.html",
+    "revision": "a910ff363b9c9b5dddf9a31d0bddeef7"
   },
   {
     "url": "cloud/repos/index.html",
-    "revision": "5f800d639da1a22b046d5069faf62304"
+    "revision": "2253b07c8df56c538e283622b8843284"
   },
   {
     "url": "cloud/socialnet/index.html",
-    "revision": "09acb159270c3e5949f03d4de13e7310"
+    "revision": "0f2246d250553c31a5e26daba53ad8a5"
   },
   {
     "url": "cloud/stores/index.html",
-    "revision": "7fc7a2a86d24ade7c38fe3d2d6bf178b"
+    "revision": "45feacd50340fc8827eecfeea14b881a"
+  },
+  {
+    "url": "cloud/tango/index.html",
+    "revision": "8b982e91c823c5ad9e077d3368016b67"
   },
   {
     "url": "entry/test-markdown/index.html",
-    "revision": "a5558d81fb7011cf232135092d0dbbc6"
+    "revision": "6ac318fa9d291d1debeacbcbb3a88511"
+  },
+  {
+    "url": "favicon/android-chrome-192x192.png",
+    "revision": "a8c7ef75598efe171556b88d32921b78"
+  },
+  {
+    "url": "favicon/android-chrome-512x512.png",
+    "revision": "210e179487795d8e0712f127a54f35cd"
+  },
+  {
+    "url": "favicon/apple-touch-icon.png",
+    "revision": "2e402300b89c1d598aa85f1c2dd205dc"
+  },
+  {
+    "url": "favicon/favicon-16x16.png",
+    "revision": "d161ba31092d6cb6d3d07d1a83e69815"
+  },
+  {
+    "url": "favicon/favicon-32x32.png",
+    "revision": "c211beb449f28adbfcffc2c595a5697a"
+  },
+  {
+    "url": "favicon/favicon.ico",
+    "revision": "e2c51633ef615a23a8f8ad4c065be63a"
   },
   {
     "url": "index.html",
-    "revision": "dfc38afcf5021ace643ee02b2d2daf5b"
+    "revision": "d674c1c547d4f69a4a4d89434df617e0"
   },
   {
     "url": "links/index.html",
-    "revision": "dc546cf3e999ec88a1df5fd0f6f79fed"
+    "revision": "69fef87b5e3dca30bd8b5bc26535a885"
   },
   {
     "url": "skills/artshub/index.html",
-    "revision": "16c39a9327de8f54175fc13edbdedbaa"
+    "revision": "29bbb9e48ff0262eea4e9c89616523f7"
+  },
+  {
+    "url": "start/index.html",
+    "revision": "64d51579c45d4fa76cb79f18f1613ac4"
   },
   {
     "url": "tvde/index.html",
-    "revision": "8a01d7e12556ed4433829b79e44b6ad2"
+    "revision": "21210d28747b35b023155678b33391e9"
   },
   {
     "url": "tvhome/index.html",
@@ -152,7 +220,7 @@ self.__precacheManifest = [
   },
   {
     "url": "work/index.html",
-    "revision": "b6a2f5d6af53eec0b9974e4d8fcd9c89"
+    "revision": "9224555b6935dea4f2950851daa8df14"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
