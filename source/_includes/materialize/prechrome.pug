@@ -1,0 +1,61 @@
+nav.nav-extended.nav-full-header.aw.lighten-2
+  .nav-wrapper.db
+    a.brand-logo(href='/')
+      i.material-icons camera
+      | #{meta.brandname}
+    a.button-collapse(href='#' data-activates='nav-mobile')
+      i.material-icons menu
+
+    ul.bt.hide-on-med-and-down
+
+      each item in top_menus
+        if item.dropdown
+
+          li.k
+            a.dropdown-button(href='#!'
+              data-activates='feature-dropdown'
+              data-beloworigin='true'
+              data-constrainwidth='false')
+              | #{item.name}
+              i.material-icons.bt arrow_drop_down
+            ul#feature-dropdown.dropdown-content
+
+              each subitem in item.dropdown
+                li
+                  a(href=subitem.url)= subitem.name
+            //  Dropdown Structure
+
+        else
+          li
+            a(href=item.url)= item.name
+
+
+  if tab_filters
+    //  Fixed Masonry Filters
+    .categories-wrapper.ao.darken-3
+      .categories-container.pin-top(style='top: 0px;')
+        ul.categories.db
+
+          // first li is li.k
+          each item in tab_filters
+            li
+              a(href=item.url)= item.name
+
+ul.side-nav#nav-mobile(style='transform: translateX(-100%);')
+
+  each item in top_menus
+    if item.dropdown
+
+      // first li is li.k
+      each subitem in item.dropdown
+        li
+          a(href=subitem.url)
+            i.material-icons= subitem.icon
+            | #{subitem.name}
+
+    else
+      li
+        a(href=item.url)
+          i.material-icons= item.icon
+          | #{item.name}
+

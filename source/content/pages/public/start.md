@@ -1,6 +1,6 @@
 ---
-permalink: /
-layout: home
+permalink: start/
+layout: page
 
 slayout: deff
 title: SO wierd

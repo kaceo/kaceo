@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include 'reusable/premeta.njk' %}
+</head>
+<body>
+
+<main>
+{{ content | safe }}
+</main>
+
+{% include 'reusable/postmeta.njk' %}
+</body>
+</html>

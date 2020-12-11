@@ -1,0 +1,179 @@
+---js
+{
+/*
+layout.common-css
+layout.common-ext-css
+page.comments
+page.content
+page.cover-img
+page.css
+page.date
+page.ext-css
+page.head-extra
+page.id
+page.share-description
+page.share-img
+page.share-title
+page.subtitle
+page.thumbnail-img
+page.title
+site.author
+site.avatar
+site.excerpt_length
+site.fb_app_id
+site.keywords
+site.mobile-theme-col
+site.site-css
+site.social-network-links.twitter
+site.staticman.branch
+site.staticman.repository
+site.title
+
+|
+absolute_url
+date_to_xmlschema
+default
+relative_url
+strip
+strip_html
+strip_index
+truncatewords
+xml_escape
+
+
+=====
+
+{% set title %}
+  {% if page.share-title %}
+    {{ page.share-title }}
+  {% elseif page.title %}
+    {{ page.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+{ % endset %}
+
+{% set description %}
+  {% if page.share-description %}
+    {{ page.share-description }}
+  {% elseif page.subtitle %}
+    {{ page.subtitle }}
+  {% else %}
+    {% set excerpt_length = site.excerpt_length | default(50) %}
+    {{ page.content | strip_html | xml_escape | truncatewords(excerpt_length) | strip }}
+  {% endif %}
+{% endset %}
+
+{% set img %}
+  {% if page.share-img %}
+    {{ page.share-img }}
+  {% elseif page.cover-img %}
+    {% if page.cover-img.first %}
+      {{ page.cover-img[0].first.first }}
+    {% else %}
+      {{ page.cover-img }}
+    {% endif %}
+  {% elseif page.thumbnail-img %}
+    {{ page.thumbnail-img }}
+  {% elseif site.avatar %}
+    {{ site.avatar }}
+  {% endif %}
+{% endset %}
+{% set img = img | strip %}
+
+
+
+*/
+
+
+}
+---
+
+{% if site_css %}{% for css in site_css %}
+<link rel="stylesheet" href="{{ css | relative_url }}">
+{% endfor %}{% endif %}
+
+
+{% if page.ext-css %}
+  {% for css in page.ext-css %}
+    { % include ext-css.html css=css % }
+  {% endfor %}
+{% endif %}
+
+{% if page.css %}
+  {% for css in page.css %}
+    <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+{% endif %}
+
+
+{% if page.head-extra %}
+  {% for file in page.head-extra %}
+    { % include {{ file }} % }
+  {% endfor %}
+{% endif %}
+
+
+
+
+
+<!-- includes tags analytics  -->
+
+<!--
+{ % include gtag.html %}
+{ % include gtm_head.html %}
+{ % include google_analytics.html %}
+-->
+
+<!-- includes comments   -->
+
+<!--
+{ % include matomo.html % }
+{ % if page.comments and site.staticman.repository and site.staticman.branch %}
+<link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+{ % endif %}
+-->
+
+
+
+
+<!-- og tags -->
+
+{% if site.title %}
+<meta property="og:site_name" content="{{ site.title }}">
+{% endif %}
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+{% if page.id %}
+<meta property="og:type" content="article">
+<meta property="og:article:author" content="{{ site.author }}">
+<meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+{% else %}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
+{% endif %}
+{% if img != "" %}
+<meta property="og:image" content="{{ img | absolute_url }}">
+{% endif %}
+
+<!-- twitter tags -->
+
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{{ description }}">
+<meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
+<meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+{% if img != "" and img != site.avatar %}
+<meta name="twitter:card" content="summary_large_image">
+{% else %}
+<meta name="twitter:card" content="summary">
+{% endif %}
+{% if img != "" %}
+<meta name="twitter:image" content="{{ img | absolute_url }}">
+{% endif %}
+
+
+<!-- includes layouts -->
+<link rel="canonical" href="{{ page.url | absolute_url(meta.url) }}">
+<link rel="alternate" type="application/rss+xml"
+title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url(meta.url) }}">

@@ -1,33 +1,18 @@
 ---
-layout: false
 permalink: sitemap.xml
-
+layout: false
+eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>{{ site.url }}/index.html</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/contact/index.html</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/blog/index.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/work/index.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  {% for post in collections.blogposts | reverse %}
+  {%- for item in collections.all -%}
+    {%- if not item.data.excludeFromSitemap -%}
+
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      <lastmod>{{ post.date | date("YYYY-MM-DD[T]HH:mm:ssZ") }}</lastmod>
-      <priority>1.0</priority>
+      <loc>{{ item.url | url | absoluteUrl(meta.url) }}</loc>
+      <lastmod>{{ item.date | date("YYYY-MM-DD[T]HH:mm:ssZ") }}</lastmod>
     </url>
-  {% endfor %}
+
+    {%- endif -%}
+  {%- endfor -%}
 </urlset>

@@ -1,19 +1,23 @@
 ---
-layout: default
+layout: chrome-bootstrap
 # Page Layout
 ---
 
-.container
-  | !{content}
+.row
+  .col-8
+    .card
+      .card-body
+        | !{content}
 
-| !{site.description}
-hr
-each t in travel
-  div #{t.city}, #{t.country}
-hr
-script.
-  //console.log(site)
-  // console.log(this)
+  .col-4
+    | !{meta.description}
+    hr
+    each t in travel
+      div #{t.city}, #{t.country}
+    hr
+    script.
+      //console.log(site)
+      // console.log(this)
 
-- var eee = "/about"
-p Go to #{eee}
+    - var eee = "/about"
+    p Go to #{eee}

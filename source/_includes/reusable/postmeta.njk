@@ -1,0 +1,14 @@
+{% if common_ext_js %}{% for js in common_ext_js %}
+{% if js.sri %}
+<script src="{{ js.href }}" integrity="{{ js.sri }}" crossorigin="anonymous"></script>
+{% elseif js.href %}
+<script src="{{ js.href }}"></script>
+{% else %}
+<script src="{{ js }}"></script>
+{% endif %}
+{% endfor %}{% endif %}
+
+
+{% if common_js %}{% for js in common_js %}
+<script src="{{ js | url }}"></script>
+{% endfor %}{% endif %}

@@ -1,30 +1,34 @@
 ---
 layout: false
 permalink: feed.xml
-
+eleventyExcludeFromCollections: true
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <language>en</language>
-    <title>{{ site.title }} - Blogposts Feed</title>
-    <description>{{ site.description }}</description>
-    <link>{{ site.url | url }}</link>
-    <atom:link href="{{ site.url | url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.buildTime | date("ddd, D MMM YYYY HH:mm:ss ZZ") }}</pubDate>
-    <lastBuildDate>{{ site.buildTime | date("ddd, D MMM YYYY HH:mm:ss ZZ") }}</lastBuildDate>
-    <generator>Eleventy</generator>
-    {% for post in collections.essays | reverse | limit(20) %}
-      <item>
-        <title>{{ post.data.title }}</title>
-        <link>{{ post.url | url}}</link>
-        <pubDate>{{ post.date | date("ddd, D MMM YYYY HH:mm:ss ZZ") }}</pubDate>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-        <description><![CDATA[
-          <p>{{ post.data.excerpt }}</p>
-          {{ post.templateContent | safe }}
-        ]]></description>
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>{{ meta.title }}</title>
+  <subtitle>{{ meta.description }}</subtitle>
+  <link href="{{ meta.url }}"
+   rel="alternative" type="text/html"/>
+  <link href="{{ meta.url }}/feed.xml"
+   rel="self" type="application/atom+xml"/>
+  <updated>{{ collections.essays | rssLastUpdatedDate }}</updated>
+  <id>{{ metad.url }}</id>
+  <author>
+    <name>{{ meta.author.name }}</name>
+    <email>{{ meta.author.email }}</email>
+  </author>
+
+  {%- for post in collections.essays | reverse -%}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(meta.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html"><![CDATA[
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
+    ]]></content>
+  </entry>
+  {%- endfor %}
+</feed>

@@ -1,0 +1,63 @@
+---
+layout: base
+
+common_ext_css:
+  - "https://fonts.googleapis.com/css?family=Lato:300,400,700"
+  - "https://fonts.googleapis.com/icon?family=Material+Icons"
+  - "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+
+common_ext_js:
+  - href: "https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    sri: "sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  - "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+
+top_menus:
+  - name: Gallery
+    url: /pages/demo
+    icon: camera
+  - name: Dark Theme
+    url: /pages/dark-theme
+    icon: brightness_3
+  - name: Blog
+    url: /pages/blog
+    icon: edit
+  - name: Docs
+    url: /pages/docs
+    icon: school
+
+  - name:
+    dropdown:
+      - name: Fullscreen Header
+        url: /pages/full-header
+        icon: fullscreen
+      - name: Horiozontal Style
+        url: /pages/horizontal
+        icon: swap_horiz
+      - name: No Image Expand
+        url: /pages/no-image
+        icon: texture
+
+tab_filters:
+  - name: All
+    url: #all
+  - name: Polygon
+    url: #polygon
+  - name: Big Bang
+    url: #bigbang
+  - name: Sacred Geometry
+    url: #sacred
+
+---
+include /materialize/prechrome.pug
+| !{ content }
+include /materialize/postchrome.pug
+
+script.
+  (function($){
+    $(function(){
+
+      $('.sidenav').sidenav();
+
+    }); // end of document ready
+  })(jQuery); // end of jQuery name space
+

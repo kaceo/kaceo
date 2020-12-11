@@ -4,7 +4,7 @@ const devops = require("./_data/devops");
 const pluginPWA = require("eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-
+const navigationPlugin = require('@11ty/eleventy-navigation')
 
 
 module.exports =
@@ -26,8 +26,11 @@ function(eleventyConfig) {
   // Plugins
   //======================================
 
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss)
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    templateFormats: ["*"],
+  })
+  eleventyConfig.addPlugin(navigationPlugin)
 
   //======================================
   // Filters functions
@@ -55,6 +58,16 @@ function(eleventyConfig) {
 
   eleventyConfig.addDataExtension("geojson",
     contents => JSON.parse(contents));
+
+  let markdownIt = require("markdown-it");
+  let markdownItAttrs = require("markdown-it-attrs");
+  let markdownItContainer = require("markdown-it-container-pandoc");
+  let options = { html: true };
+  let markdownLib =
+    markdownIt(options)
+    .use(markdownItContainer)
+    .use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
 
   //======================================
   // Collections
@@ -91,14 +104,17 @@ function(eleventyConfig) {
 
       input: "./source/content",   // "source/pages"
       includes: "../_includes",  // "source/_includes"
-      data: "../_data",          // "source/_data"
       layouts: "../_layouts",    // "source/_layouts"
+      data: "../_data",          // "source/_data"
     },
 
     //passthroughFileCopy: true,
     //templateFormats: ["md", "njk"],
+    templateFormats: ['md', 'njk', 'pug', 'liquid'],
+    htmlTemplateEngine: 'njk',
     //markdownTemplateEngine: 'njk',
-    //htmlTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
+    setQuietMode: true,
 
   }
 }
