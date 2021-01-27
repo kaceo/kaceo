@@ -200,7 +200,7 @@ self.__precacheManifest = [
   },
   {
     "url": "links/index.html",
-    "revision": "10dc15d28f6c46445e024bee2a9ccde5"
+    "revision": "d942829f70d5d04400294830d01a8980"
   },
   {
     "url": "skills/artshub/index.html",
