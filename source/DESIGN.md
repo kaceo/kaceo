@@ -1,3 +1,11 @@
+## The Source repo for www.kaceong.com
+
+Static Site generated in Eleventy + Pug + Yaml
+Static CSS frameworks = bootstrap, materialize, etc
+Static Hosting on Github Pages
+
+Dynamic Backend is cloud.kaceong.com (Vue3)
+
 Each Page
 
 computed data
