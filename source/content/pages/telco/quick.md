@@ -10,7 +10,7 @@ Weather is .....
 
   https://lh5.googleusercontent.com/ySyWS9fry0ORvT5-iydewxG5BZB_-KuL3RwILFbTAN-oZ9IL5cpwwA87x0dqdWCBEJXC51cbDxs3nIw-TQoLk6pJCn8tEO3KaUdtWYQbOCiC8HnrVCQ=w1280
 
-![](/kaceo/assets/img/unnamed.jpg){ .img-thumbnail .rounded }
+![]({{ '/assets/img/unnamed.jpg' | url}}){ .img-thumbnail .rounded }
 
 
 ::: {.card}
