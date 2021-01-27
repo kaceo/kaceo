@@ -7,7 +7,7 @@
    rel="alternative" type="text/html"/>
   <link href="https://www.kaceong.com/feed.xml"
    rel="self" type="application/atom+xml"/>
-  <updated>2020-02-28T00:00:00+00:00</updated>
+  <updated>2020-02-28T00:00:00Z</updated>
   <id></id>
   <author>
     <name>Kace Ong</name>
@@ -16,7 +16,7 @@
   <entry>
     <title>Sample blog post</title>
     <link href="https://www.kaceong.com/entry/test-markdown/"/>
-    <updated>2020-02-28T00:00:00+00:00</updated>
+    <updated>2020-02-28T00:00:00Z</updated>
     <id>https://www.kaceong.com/entry/test-markdown/</id>
     <content type="html"><![CDATA[
       <p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
@@ -55,9 +55,9 @@
 </tbody>
 </table>
 <p>How about a yummy crepe?</p>
-<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe"></p>
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" /></p>
 <p>It can also be centered!</p>
-<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" :="" class="mx-auto.d-block"></p>
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" :="" class="mx-auto.d-block" /></p>
 <p>Here's a code chunk:</p>
 <pre><code>var foo = function(x) {
   return(x + 5);
@@ -65,7 +65,7 @@
 foo(3)
 </code></pre>
 <p>And here is the same code with syntax highlighting:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span><span class="token punctuation">(</span>x <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />  <span class="token keyword">return</span><span class="token punctuation">(</span>x <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span></code></pre>
 <p>And here is the same code yet again but with line numbers:</p>
 <p %="" endhighlight="">{ % highlight javascript linenos % }
 var foo = function(x) {

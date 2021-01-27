@@ -148,7 +148,7 @@ self.__precacheManifest = [
   },
   {
     "url": "cloud/index.html",
-    "revision": "a910ff363b9c9b5dddf9a31d0bddeef7"
+    "revision": "8456515117cf7c3f2d1a874f62ec6b2e"
   },
   {
     "url": "cloud/repos/index.html",
@@ -200,7 +200,7 @@ self.__precacheManifest = [
   },
   {
     "url": "links/index.html",
-    "revision": "69fef87b5e3dca30bd8b5bc26535a885"
+    "revision": "10dc15d28f6c46445e024bee2a9ccde5"
   },
   {
     "url": "skills/artshub/index.html",
