@@ -20,7 +20,7 @@
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-container": "^3.0.0",
     "markdown-it-container-pandoc": "^1.0.0",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "rimraf": "^2.6.2"
   },
   "nonDev": {
