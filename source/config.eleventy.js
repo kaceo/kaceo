@@ -54,7 +54,7 @@ function(eleventyConfig) {
   //======================================
 
   eleventyConfig.addDataExtension("yaml",
-    contents => yaml.safeLoad(contents));
+    contents => yaml.load(contents));
 
   eleventyConfig.addDataExtension("geojson",
     contents => JSON.parse(contents));

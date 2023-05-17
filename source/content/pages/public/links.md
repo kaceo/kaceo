@@ -46,5 +46,5 @@ function clean(s) {
 
 <div class="c-sitefooter__copyright">
   <p class="u-margin-all-none">&copy; Webstoemp
-  {{ site.buildTime | date("Y") }}</p>
+   site.buildTime | date("Y") </p>
 </div>
