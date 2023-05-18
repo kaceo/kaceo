@@ -1,0 +1,15 @@
+
+footer.footer
+  .container
+  ul.nav
+    .row.g-4.py-4
+      .col-12.col-md-12.col-lg-4
+        h6.mb-4 Quick Links
+        .row
+          .col-6
+            ul.nav.flex-column
+              each item in bottom_menus
+                li.nav-item.mb-2
+                  a.nav-link(href=item.url)= item.name
+          .col-6
+

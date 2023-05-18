@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf _site",
-    "serve": "NODE_ENV=development eleventy --serve --config=source/config.eleventy.js",
-    "build": "NODE_ENV=production eleventy --config=source/config.eleventy.js"
+    "serve": "NODE_ENV=development eleventy --serve --config=eleventy.config.js",
+    "build": "NODE_ENV=production eleventy --config=eleventy.config.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

@@ -11,6 +11,8 @@ common_ext_js:
 eleventyComputed:
   root_slug: "{{ '/' | url }}"
   top_menus:
+  - name: Home
+    url: "{{ '/home/' | url }}"
   - name: About
     url: "{{ '/about/' | url }}"
   - name: Links
@@ -19,6 +21,16 @@ eleventyComputed:
     url: "{{ '/catalog/' | url }}"
   - name: Start
     url: "{{ '/start/' | url }}"
+  - name: Blog
+    url: "{{ '/blog/' | url }}"
+
+
+  bottom_menus:
+  - name: Sitemap
+    url: "{{ '/sitemap.xml' | url }}"
+  - name: Error Page
+    url: "{{ '/404.htm' | url }}"
+
 
 
 wop_menus:
@@ -42,7 +54,9 @@ special_menus:
 
 ---
 include /bootstrap/prechrome.pug
+
 .container-fluid
   | !{ content }
+
 include /bootstrap/postchrome.pug
 
