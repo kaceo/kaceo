@@ -1,23 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-      <loc>https://www.kaceong.com/about/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url><url>
-      <loc>https://www.kaceong.com/blog/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url><url>
-      <loc>https://www.kaceong.com/catalog/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url><url>
-      <loc>https://www.kaceong.com/home/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url><url>
-      <loc>https://www.kaceong.com/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url><url>
-      <loc>https://www.kaceong.com/links/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url><url>
-      <loc>https://www.kaceong.com/start/</loc>
-      <lastmod>2023-05-18T09:52:46+00:00</lastmod>
-    </url></urlset>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url><loc>https://www.kaceong.com/entry/post1/</loc></url>
+  <url><loc>https://www.kaceong.com/entry/post2/</loc></url>
+  <url><loc>https://www.kaceong.com/entry/post3/</loc></url>
+  <url><loc>https://www.kaceong.com/entry/post4/</loc></url>
+  <url><loc>https://www.kaceong.com/home/</loc></url>
+  <url><loc>https://www.kaceong.com/</loc></url>
+  <url><loc>https://www.kaceong.com/posts/</loc></url>
+  <url><loc>https://www.kaceong.com/tags/</loc></url>
+  <url><loc>https://www.kaceong.com/about/</loc></url>
+  <url><loc>https://www.kaceong.com/links/</loc></url>
+  <url><loc>https://www.kaceong.com/start/</loc></url>
+  <url><loc>https://www.kaceong.com/test-md/</loc></url>
+  <url><loc>https://www.kaceong.com/test-pug/</loc></url>
+  
+</urlset>
