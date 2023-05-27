@@ -1,0 +1,109 @@
+---
+layout: base
+eleventyComputed:
+  previousPost: false
+  nextPost: false
+#  testa: "{{ page.date | readableDate }}"
+---
+//-
+  config.addFilter("getPreviousCollectionItem",
+  function (collection, pageOverride, langCode) {
+    return getLocaleCollectionItem.call(
+      this, config, collection, pageOverride, langCode, -1);
+  });
+  config.addFilter("getNextCollectionItem",
+  function (collection, pageOverride, langCode) {
+    return getLocaleCollectionItem.call(
+      this, config, collection, pageOverride, langCode, 1);
+  });
+  getLocaleCollectionItem(
+    config,
+    collection,
+    pageOverride,
+    langCode,
+    indexModifier = 0
+      {
+      return getCollectionItem(
+        collection,
+        pageOverride || this.page,
+        indexModifier
+      );
+
+
+//-- post introduction ------------------------
+
+//- var a = filters.getNextCollectionItem(collections.essays, page)
+//- var a = filters.getNextCollectionItem(collections.essays)
+//- var a=[ 'this', 'is', { name: 'Mary', tel: '12312321'}, 20, [ 9, 10]]
+
+// pkg, page, eleventy
+// pagination, collections
+// js, yaml =  meta, cloud, cosmic, devops, travel
+//
+  // Template.js/getTemplates(data)
+  // template, data, page, inputPath, fileSlug, filePathStem,
+  // date, outputPath, url,
+  // pageNumber,
+  debug: true,
+  // pretty compileDebug basedir
+  // doctype inlineRuntimeFunctions
+  // filterOptions filterAliases filters
+  // globals self includeSources
+  // templateName plugins
+
+
+- var a = { pp }
+p VARIABLE
+//-pre= JSON.stringify( {testa}, null, 2)
+
+pre= JSON.stringify(a, null, 2)
+pre!= address
+
+
+
+ul
+  for p in collections.essays
+    - var pp = p.page
+    li= pp.outputPath
+
+hr
+
+article
+  //-title
+  h1
+    a(href=page.url)= title
+
+  //-subtitle
+  p.text-secondary(
+    datetime = filters.htmlDateString(page.date)
+  )
+    small
+      | post by&nbsp;
+      = meta.author.name
+      | &nbsp;on&nbsp;
+      | #{ filters.readableDate(page.date) }
+
+  //-tags, keywords
+  div
+    each tag in filters.filterTagList(tags)
+      a.post-tag(href="/tags/"+filters.slug(tag)+'/'
+      ) ##{tag}
+      | &nbsp;|&nbsp;
+
+
+  //-main story
+  hr
+  h3 !{ description }
+  div !{ content  }
+  hr
+
+  if nextPost || previousPost
+    ul
+      if nextPost
+        li
+          | Next:
+          a(href=nextPost.url)= nextPost.data.title
+      if previousPost
+        li
+          | Prev:
+          a(href=previousPost.url)= previousPost.data.title

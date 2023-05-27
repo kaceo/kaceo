@@ -8,13 +8,16 @@ common_ext_css:
 common_ext_js:
   - "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
 
-eleventyComputed:
+#eleventyComputed:
+
+notcomputed:
+  aroot_slug: "/"
   root_slug: "{{ '/' | url }}"
-  top_menus:
+  atop_menus:
   - name: Home
     url: "{{ '/home/' | url }}"
   - name: About
-    url: "{{ '/about/' | url }}"
+    url: "/about/"
   - name: Links
     url: "{{ '/links/' | url }}"
   - name: Catalog
@@ -24,13 +27,25 @@ eleventyComputed:
   - name: Blog
     url: "{{ '/blog/' | url }}"
 
+  top_menus:
+  - name: Home
+    url: "/home/"
+  - name: About
+    url: "/about/"
+  - name: Links
+    url: "/links/"
+  - name: Catalog
+    url: "/catalog/"
+  - name: Start
+    url: "/start/"
+  - name: Blog
+    url: "/blog/"
 
   bottom_menus:
   - name: Sitemap
-    url: "{{ '/sitemap.xml' | url }}"
+    url: "/sitemap.xml"
   - name: Error Page
-    url: "{{ '/404.htm' | url }}"
-
+    url: "/404.html"
 
 
 wop_menus:

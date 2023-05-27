@@ -1,0 +1,18 @@
+---
+layout: post2
+
+---
+{%- set alltags %}
+  {%- for tag in tags | filterTagList %}
+    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li>
+      <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+      {%- if not loop.last %}, {% endif %}
+    </li>
+  {%- endfor %}
+{%- endset %}
+
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- endif %}

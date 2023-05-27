@@ -1,0 +1,24 @@
+top_menus:
+  - name: Home
+    url: "/home/"
+  - name: Test MD
+    url: "/test-md/"
+  - name: Test PUG
+    url: "/test-pug/"
+  - name: Posts
+    url: "/posts/"
+  - name: Tags
+    url: "/tags/"
+
+
+bottom_menus:
+  - name: Sitemap
+    url: "/sitemap.xml"
+  - name: Error Page
+    url: "/404.html"
+  - name: About
+    url: "/about/"
+  - name: Links
+    url: "/links/"
+  - name: Start
+    url: "/start/"

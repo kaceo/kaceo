@@ -1,0 +1,44 @@
+---
+permalink: "/posts/"
+layout: page
+
+
+---
+<!--
+  pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter:
+      - all
+      - post
+      - posts
+      - tagList
+    addAllPagesToCollections: true
+
+eleventyComputed:
+-->
+
+<h1>Posts</h1>
+<p>See <a href="/tags/">See All Tags</a>.</p>
+
+
+{% set postslist = collections.articles %}
+Number of Articles = {{ postslist|length }}
+
+
+{#% //include "posts/postslist.njk" %#}
+
+<ol class="postlist" reverse>
+{% for post in postslist | reverse %}
+
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <a href="{{ post.url }}" class="postlist-link">
+
+      {{ post.data.title  }}
+    </a>
+  </li>
+
+{% endfor %}
+</ol>
+

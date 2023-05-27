@@ -1,0 +1,24 @@
+---
+layout: default
+# Profile Layout
+---
+
+h1 PROFILE
+.container
+  | !{content}
+
+
+//-
+  #layout: chrome-bootstrap
+  # Post Layout
+
+  #.container
+  #  h1 !{title}
+  #  hr
+  #  | !{content}
+  #  pdate:  "{ { post.date | readableDate } }"
+  #  nextPost: "{ { collections.posts | getNextCollectionItem(page) } }"
+  #  previousPost: "{ { collections.posts | getPreviousCollectionItem(page) } }"
+
+  #eleventyComputed:
+  #pdate: "1234456"

@@ -8,4 +8,5 @@ module.exports = {
   notReady: false, // Flag to prevent something from rendering.
 
   buildTime: new Date(),
+  baseUrl: '/kaceo/',
 };

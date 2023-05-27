@@ -1,0 +1,62 @@
+---
+layout: base
+
+subtitle: "1234456"
+
+---
+//-
+  #eleventyComputed:
+  #  rdate: "{{ page.date | readableDate}}",
+  #nextPost: collections.posts | getNextCollectionItem(page)
+  #previousPost: collections.posts | getPreviousCollectionItem(page)
+  #goodtags: tags | filterTagList
+  #tag | slug
+  #date | html
+
+//-- p. sasdasd #[q(lang="es")] expressed.
+//---tag interpolate #[xxx]
+//---string interpolate #{xx} !{xxx} = xxx
+//---
+
+//-- post introduction ------------------------
+
+h1
+  a(href=page.url) #{ title }
+
+p.text-secondary(datetime=post.date)
+  small
+    | post by
+    |
+    | #{ meta.author.name }
+    |
+    | on
+    |
+    | #{ post.date }
+
+//-- tags -------------------------------------
+each tag in  tags | filterTagList
+  var tagUrl = '/tags/' + {{ tag | slug }} + '/''
+  small
+    a.post-tag(href=tagUrl) {{ tag }}
+
+//-- main post --------------------------------
+hr
+
+h3 !{ description }
+div !{ content  }
+
+hr
+//-- navigation to prev/next post -------------
+//-var nextPost = collections.posts | getNextCollectionItem(page)
+//-var previousPost = collections.posts | getPreviousCollectionItem(page)
+
+if nextPost || previousPost
+  ul
+    if nextPost
+      li
+        | Next:
+        a(href=nextPost.url) {{ nextPost.data.title }}
+    if previousPost
+      li
+        | Previous:
+        a(href=previousPost.ur) {{ previousPost.data.title }}

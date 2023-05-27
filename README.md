@@ -15,20 +15,12 @@ VueJS, Jamstack (JavaScript, APIs + Markup) and GraphQL.
 ![Github Action Deploy Static Pages](https://github.com/kaceo/kaceo/workflows/Build%20and%20Deploy%20Static%20Pages/badge.svg)
 
 
+## My Play Site
 
+My blog, powered by [Eleventy]() and deployed as [Github Pages]().
 
-
-
-
-
-
-
-
-
-
-
-
-
+- based on Eleventy + [Pug]()
+- styles with [Tailwindcss]()
 
 
 <!--- <div align="left" width="150px" height="150px">

@@ -1,0 +1,26 @@
+---
+layout: base
+
+common_js:
+  - "https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"
+
+---
+.wrapper(
+  class="flex flex-col bg-white text-slate-800 break-words"
+  xclass="h-screen")
+
+  include /tailwind/prechrome.pug
+
+  .flex.flex-col.min-h-screen.border-2.border-blue-300(
+    class="md:flex-row mt-24 px-8")
+
+    article.prose.xborder-2.border-rose-600(
+      class="flex-grow mr-7"
+      xclass="flex-grow mx-auto mx-7 mt-32 max-w-5xl ")
+      | !{ content }
+
+    include /tailwind/sidechrome.pug
+
+  include /tailwind/postchrome.pug
+
+

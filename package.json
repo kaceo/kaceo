@@ -7,23 +7,33 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf _site",
+    "debug": "NODE_ENV=development DEBUG=Eleventy* eleventy --serve --config=eleventy.config.js",
     "serve": "NODE_ENV=development eleventy --serve --config=eleventy.config.js",
     "build": "NODE_ENV=production eleventy --config=eleventy.config.js"
   },
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "eleventy-plugin-pwa": "^1.0.8",
     "js-yaml": "^4.1.0",
+    "luxon": "^3.3.0",
+    "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-container": "^3.0.0",
     "markdown-it-container-pandoc": "^1.0.0",
-    "moment": "^2.29.4",
-    "rimraf": "^5.0.0"
+    "tailwindcss": "^3.3.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "rimraf": "^5.0.1"
   },
   "nonDev": {
+    "moment": "^2.29.4",
     "@11ty/eleventy-navigation": "^0.1.6"
   },
   "markup": [
@@ -34,8 +44,5 @@
     "@code-blocks/music",
     "@code-blocks/tables",
     "@code-blocks/prism"
-  ],
-  "dependencies": {
-    "axios": "^1.4.0"
-  }
+  ]
 }

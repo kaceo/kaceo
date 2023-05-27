@@ -1,0 +1,28 @@
+.c-pageintro
+  .l-container
+    .c-pageintro__inner
+      p.c-suptitle Thoughts &amp; ramblings
+      p.c-txtintro
+        | I write about whatever piques
+        | my interest at the moment. I just hope it
+        | will help me remember it all when I am old,
+        | gray and nodding by the fire. Read on or hit the
+        |
+        a(href='/feed.xml') RSS feed
+        |
+        | if you're so inclined.
+
+.c-pagecontent
+  .l-container
+    h1.c-h1.c-h1--invert Blog archives
+    ul.c-list-ui
+      each post in collections.all
+        li
+          article.c-blogteaser
+            p.c-blogteaser__date
+              time(datetime=filters.htmlDateString(post.date)
+              )= filters.readableDate(post.date)
+          h2.c-blogteaser__title
+            a.c-blogteaser__link(
+              href=post.url
+            )= post.data.title

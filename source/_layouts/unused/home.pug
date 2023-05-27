@@ -1,0 +1,30 @@
+---
+layout: chrome-bootstrap
+# Home Layout
+---
+
+i Welcome to My Site
+hr
+| !{content}
+hr
+
+{% set posts = collections.all %}
+
+ALL {{ collections.all | length }}
+
+{#
+ESSAYS  collections.essays | length
+PROJECTS  collections.projects | length
+#}
+
+{% set postsCount = posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPosts) %}
+
+<h2>Latest {{ latestPostsCount }}
+Post{% if latestPostsCount != 1 %}s{% endif %}
+</h2>
+
+{% set postslist = posts | head(-1 * numberOfLatestPosts) %}
+{% set postslistCounter = postsCount %}
+
+{% include "posts/postslist.njk" %}

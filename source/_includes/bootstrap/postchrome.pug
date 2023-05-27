@@ -1,15 +1,38 @@
 
-footer.footer
-  .container
-  ul.nav
-    .row.g-4.py-4
-      .col-12.col-md-12.col-lg-4
-        h6.mb-4 Quick Links
-        .row
-          .col-6
-            ul.nav.flex-column
-              each item in bottom_menus
-                li.nav-item.mb-2
-                  a.nav-link(href=item.url)= item.name
-          .col-6
+footer(class="mt-20 px-10 py-8 bg-slate-200")
+  div(class="max-w-5xl mx-auto text-slate-700 text-center")
+    | © 2023&nbsp;
+    a(href='/'
+      class="font-medium"
+      target="_blank" rel="noopener"
+    )= meta.brandname
+    | .  Built on&nbsp;
+    a(href="https://www.11ty.dev"
+      target="_blank" rel="noopener"
+    ) Eleventy
+    | &nbsp;and&nbsp;
+    a(href="https://tailwindcss.com"
+      target="_blank" rel="noopener"
+    ) Tailwind CSS
+    | .
+  div
+    ul
+      each item in menus.bottom_menus
+        li
+          a.nav-link(href=item.url)= item.name
 
+
+//-
+  footer.footer
+    .container
+    ul.nav
+      .row.g-4.py-4
+        .col-12.col-md-12.col-lg-4
+          h6.mb-4 Quick Links
+          .row
+            .col-6
+              ul.nav.flex-column
+                each item in menus.bottom_menus
+                  li.nav-item.mb-1
+                    a.nav-link(href=item.url)= item.name
+            .col-6

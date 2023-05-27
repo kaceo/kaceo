@@ -1,26 +1,30 @@
-url: "https://www.kaceong.com"
-baseUrl: "/kaceo/"
-
+# AUTHOR INFO
 author:
   name: "Kace Ong"
   email: "me@example.com"
 
 
+# SITE INFO
 brandname: 'KaceO'
-copyright: '2020 Kace Ong'
-footbio: "We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated."
+surl: "www.kaceong.com"
+url: "https://www.kaceong.com"
+# baseUrl: "/kaceo/"
 
 title: "My Blog about Boats"
 description: "The Online Playground of KaceO"
-
 metaTitle: "KaceO Home Page"
 metaDescription:
   "A Static Website created with Eleventy and Pug"
+copyright: '2023 Kace Ong'
+footbio: "We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated."
+
+keywords: ['special, ideas']
+paginate: 6
+excerpt_length: 100
+diqusShortname: ashortname
 
 avatar: ''
-excerpt_length: 100
 fb_app_id: ''
-keywords: 'special, ideas'
 mobile-theme-col: ''
 social-network-links:
   twitter: ''

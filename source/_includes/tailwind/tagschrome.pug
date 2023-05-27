@@ -1,0 +1,13 @@
+h1(class="text-3xl leading-normal font-bold mt-0 mb-7 text-center"
+)= title
+
+div(class="flex justify-center flex-wrap")
+  each tagcount, tagname in collections.tagList
+
+    a(href='/tag/'+filters.slugify(tagname)
+      class="inline-block mx-1 mb-3 px-4 py-2 bg-slate-200 text-slate-700 font-medium rounded-full"
+    )
+      = tagname
+      span(
+        class="px-2 py-1 ml-1 text-xs font-semibold bg-teal-300 text-teal-800 rounded-full"
+      )= tagcount
