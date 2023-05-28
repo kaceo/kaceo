@@ -4,7 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title></title>
+<title>Tagged with &quot;&quot;</title>
 <meta name="generator" content="Eleventy v2.0.1">
 <meta name="author" content="Kace Ong">
 
@@ -20,92 +20,29 @@
 
 <main>
 <div class="wrapper flex flex-col bg-white text-slate-800 break-words" xclass="h-screen"><header class="bg-white w-full px-6 py-5 z-50 fixed top-0 shadow-md transition-all transform ease-in-out duration-500" id="header"><div class="max-w-6xl mx-auto flex items-center flex-wrap justify-between"><div class="sm:mr-8"><a class="flex items-center" href="/"><span class="text-xl text-teal-700 font-semibold self-center">KaceO</span></a><nav class="order-last md:order-none items-center flex-grow w-full md:w-auto md:flex hidden mt-2 md:mt-0" id="menu"><a class="block mt-4 md:inline-block md:mt-0 font-medium text-slate-700 hover:text-teal-600 text-base mr-4" href="/home/">Home</a>&nbsp;|&nbsp;<a class="block mt-4 md:inline-block md:mt-0 font-medium text-slate-700 hover:text-teal-600 text-base mr-4" href="/test-md/">Test MD</a>&nbsp;|&nbsp;<a class="block mt-4 md:inline-block md:mt-0 font-medium text-slate-700 hover:text-teal-600 text-base mr-4" href="/test-pug/">Test PUG</a>&nbsp;|&nbsp;<a class="block mt-4 md:inline-block md:mt-0 font-medium text-slate-700 hover:text-teal-600 text-base mr-4" href="/posts/">Posts</a>&nbsp;|&nbsp;<a class="block mt-4 md:inline-block md:mt-0 font-medium text-slate-700 hover:text-teal-600 text-base mr-4" href="/tags/">Tags</a>&nbsp;|&nbsp;</nav></div><div class="flex items-center md:hidden text-slate-700 hover:text-teal-600 cursor-pointer sm:ml-6" id="menu-toggle">MENU</div></div></header><div class="flex flex-col min-h-screen border-2 border-blue-300 md:flex-row mt-24 px-8"><article class="prose xborder-2 border-rose-600 flex-grow mr-7" xclass="flex-grow mx-auto mx-7 mt-32 max-w-5xl "><!--
-permalink: "/posts//"
-pagination:
-  size: 1
-  data: collections.pagedPosts
-  alias: paged
-  pagination:
-    data: collections
-    size: 1
-    alias: tag
-    filter:
-      - all
-      - post
-      - posts
-      - tagList
-    addAllPagesToCollections: true
-  pagination:
-    data: collections.pagedPosts
-    size: 1
-    alias: paged
-
-  permalink: if paged.number > 1 page/ paged.number endif index.html
-
-eleventyComputed:
-
-comments: >
-  div(class="flex flex-wrap -mx-2")
-    include partials/post-grid.
-
-  if collections.posts.length > site.paginate
-    include partials/paginator
-
+- var tagsgroup = collections.tagList
 -->
 
 
 
+<h1>Tagged with &quot;&quot;</h1>
 
-<h1>Posts</h1>
-<p>See <a href="/tags/">See All Tags</a>.</p>
+<a href="/tags/">See All Tags</a?
 
+<hr/>
+<p>
 
-Number of Articles = 4
+<!-- //include /tailwind/tagschrome.pug -->
+More coming......
 
-
-
-
-
-<ol class="postlist" reverse>
-
-
-  <li class="postlist-item">
-    <a href="/entry/post1/" class="postlist-link">
-
-      First, Seven Things to Know About Business
-    </a>
-  </li>
+<p> This is a list</p>
 
 
 
-  <li class="postlist-item">
-    <a href="/entry/post2/" class="postlist-link">
 
-      This is my second post with a much longer title.
-    </a>
-  </li>
-
-
-
-  <li class="postlist-item">
-    <a href="/entry/post3/" class="postlist-link">
-
-      This is my third post.
-    </a>
-  </li>
-
-
-
-  <li class="postlist-item">
-    <a href="/entry/post4/" class="postlist-link">
-
-      This is my fourth post.
-    </a>
-  </li>
-
-
-</ol>
-
+<!--
+permalink: "/tag//"
+-->
 </article><aside class="border-2 border-rose-600 flex-none md:w-48 w-full"><span>The Online Playground of KaceO</span></aside></div><footer class="mt-20 px-10 py-8 bg-slate-200"><div class="max-w-5xl mx-auto text-slate-700 text-center">© 2023&nbsp;<a class="font-medium" href="/" target="_blank" rel="noopener">KaceO</a>.  Built on&nbsp;<a href="https://www.11ty.dev" target="_blank" rel="noopener">Eleventy</a>&nbsp;and&nbsp;<a href="https://tailwindcss.com" target="_blank" rel="noopener">Tailwind CSS</a>.</div><div><ul><li><a class="nav-link" href="/sitemap.xml">Sitemap</a></li><li><a class="nav-link" href="/404.html">Error Page</a></li><li><a class="nav-link" href="/about/">About</a></li><li><a class="nav-link" href="/links/">Links</a></li><li><a class="nav-link" href="/start/">Start</a></li></ul></div></footer></div>
 </main>
 
