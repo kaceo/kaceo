@@ -14,7 +14,7 @@ function fromEntries (iterable) {
 */
 
 module.exports = (coll) => {
-  const posts = require('./posts')(coll);
+  const posts = require('./allPosts')(coll);
 
   const tagListArr = posts
     .reduce((tags, post) => {

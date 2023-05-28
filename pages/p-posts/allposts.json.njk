@@ -1,0 +1,14 @@
+---
+permalink: "allposts.json"
+---
+[
+{% for post in collections.allPosts %}
+  {
+    "url": "{{ post.url | url }}",
+    "title": "{{ post.data.title }}",
+    "date": "{{ post.date | rssDate }}",
+    "tags": ["{{ post.data.tags }}" ],
+  }{% if not loop.last %},{% endif %}
+{% endfor %}
+]
+

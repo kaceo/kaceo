@@ -38,10 +38,10 @@ const postslist = [
 ]
 
 const grouplist = [
-  { name: "posts",
-    data: require('./eleventy/collections/posts') },
-  { name: "tagList",
-    data: require('./eleventy/collections/tagList') },
+  { name: "allPosts",
+    data: require('./eleventy/collections/allPosts') },
+  { name: "allTags",
+    data: require('./eleventy/collections/allTags') },
   { name: "pagedPosts",
     data: require('./eleventy/collections/pagedPosts') },
   { name: "pagedPostsByTag",

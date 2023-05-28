@@ -1,0 +1,20 @@
+//- paged points to prev and next pages
+
+div(class="mt-3 flow-root")
+  if not paged.first
+    - var prevurl = pagination.href.previous
+  else
+    - var prevurl = 'javascript:void(0)'
+
+  if not paged.last
+    - var nexturl = pagination.href.next
+  else
+    - var nexturl = 'javascript:void(0)'
+
+  a(href=prevurl
+    class="float-left bg-white font-semibold py-2 px-4 border rounded shadow-md text-slate-800 cursor-pointer hover:bg-slate-100"
+  ) Previous
+
+  a(href=nexturl
+    class="float-right bg-white font-semibold py-2 px-4 border rounded shadow-md text-slate-800 cursor-pointer hover:bg-slate-100"
+  ) Next

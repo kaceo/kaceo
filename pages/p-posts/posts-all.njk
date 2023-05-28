@@ -2,9 +2,13 @@
 permalink: "/posts/"
 layout: page
 
-
 ---
 <!--
+permalink: "/posts/{{paged.number}}/"
+pagination:
+  size: 1
+  data: collections.pagedPosts
+  alias: paged
   pagination:
     data: collections
     size: 1
@@ -15,16 +19,33 @@ layout: page
       - posts
       - tagList
     addAllPagesToCollections: true
+  pagination:
+    data: collections.pagedPosts
+    size: 1
+    alias: paged
+
+  permalink: if paged.number > 1 page/ paged.number endif index.html
 
 eleventyComputed:
+
+comments: >
+  div(class="flex flex-wrap -mx-2")
+    include partials/post-grid.
+
+  if collections.posts.length > site.paginate
+    include partials/paginator
+
 -->
+
+{% set postslist = collections.allPosts %}
+
 
 <h1>Posts</h1>
 <p>See <a href="/tags/">See All Tags</a>.</p>
 
 
-{% set postslist = collections.articles %}
 Number of Articles = {{ postslist|length }}
+
 
 
 {#% //include "posts/postslist.njk" %#}

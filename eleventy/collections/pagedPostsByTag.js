@@ -1,9 +1,8 @@
-//const siteData = require('../../src/_data/site');
-const paginate = 5
 
+const paginate = require('./config').perpage
 
 module.exports = (coll) => {
-  const tagList = require('./tagList')(coll);
+  const tagList = require('./allTags')(coll);
 
   const maxPostsPerPage = paginate;
   const pagedPosts = [];

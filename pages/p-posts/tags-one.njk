@@ -1,0 +1,39 @@
+---
+permalink: "/tag/{{ tags }}/"
+#dynamicPermalink: false
+layout: page
+
+excludeFromCollections: true
+eleventyComputed:
+  title: "Tagged with \"{{ tags.tagName | capitalize }}\""
+pagintion:
+  data: collections.allTags
+  size: 1
+  alias: tags
+---
+<!--
+- var tagsgroup = collections.tagList
+-->
+
+{% set tagsgroup = collections.allTags %}
+
+<h1>{{ title }}</h1>
+
+<a href="/tags/">See All Tags</a?
+
+<hr/>
+<p>
+
+<!-- //include /tailwind/tagschrome.pug -->
+More coming......
+
+<p> This is a list</p>
+{% for c in tagsgroup %}
+  <p>{{ c}} = {{c}}</p>
+{% endfor %}
+
+
+
+<!--
+permalink: "/tag/{{ tags.slug }}/"
+-->

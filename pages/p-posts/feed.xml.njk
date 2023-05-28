@@ -1,7 +1,6 @@
 ---
-permalink: feed.xml
+permalink: "feed.xml"
 layout: false
-
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -10,9 +9,9 @@ eleventyExcludeFromCollections: true
   <title>{{ meta.title }}</title>
   <subtitle>{{ meta.description }}</subtitle>
   <link href="{{ meta.url }}"
-   rel="alternative" type="text/html"/>
+    rel="alternative" type="text/html"/>
   <link href="{{ meta.url }}/feed.xml"
-   rel="self" type="application/atom+xml"/>
+    rel="self" type="application/atom+xml"/>
   <updated>{{ collections.essays | rssLastUpdatedDate }}</updated>
   <id>{{ metad.url }}</id>
   <author>
@@ -20,7 +19,7 @@ eleventyExcludeFromCollections: true
     <email>{{ meta.author.email }}</email>
   </author>
 
-  {%- for post in collections.essays | reverse -%}
+  {%- for post in collections.allPosts | reverse -%}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(meta.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>

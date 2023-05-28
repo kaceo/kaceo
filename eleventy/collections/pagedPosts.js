@@ -1,9 +1,9 @@
-//const siteData = require('../../source/_data/meta');
 
-const paginate = 6 //siteData.paginate;
+//siteData.paginate
+const paginate = require('./config').perpage
 
 module.exports = (coll) => {
-  const allPosts = require('./posts')(coll);
+  const allPosts = require('./allPosts')(coll);
 
   const maxPostsPerPage = paginate;
   const numberOfPages = Math.ceil(allPosts.length / maxPostsPerPage);
