@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Demo Dashboard</title>
+<meta name="generator" content="Eleventy v2.0.1">
+<meta name="author" content="Kace Ong">
+
+<meta name="description" content="">
+<meta name="keywords" content="special, ideas">
+
+
+
+
+
+<link href="/assets/dashing/gridstack.min.css" rel="stylesheet"/>
+
+<link href="/assets/dashing/gridstack-extra.min.css" rel="stylesheet"/>
+
+
+
+<script src="/assets/dashing/gridstack-all.js" type="text/javascript"></script>
+
+
+</head>
+<body >
+
+<div class="titlerow">Demo Dashboard</div><div class="dash"><div class="grid-stack"><div class="grid-stack-item" gs-id="0" gs-w="1" gs-h="1" gs-x="1" gs-y="0"><div class="grid-stack-item-content"><div class="dummy-content">0 // clockI don't know how?</div></div></div><div class="grid-stack-item" gs-id="1" gs-w="1" gs-h="1" gs-x="0" gs-y="0"><div class="grid-stack-item-content"><div class="dummy-content"><div class="widget-image"><img src="/assets/kacemay.jpg"/></div><style>.widget-image{
+  width:100%; height:100%;
+  background-color: #4b4b4b;
+  border: 2px solid black;
+}
+.widget-image img{
+  object-fit: contain;
+  width:100%; height:100%;
+}</style></div></div></div><div class="grid-stack-item" gs-id="2" gs-w="2" gs-h="1" gs-x="2" gs-y="0"><div class="grid-stack-item-content"><div class="dummy-content"><div class="widget-text"><h1 class="title">Hello</h1><h3>This is your shiny new 1080p dashboard.</h3><p class="more-info">Protip: You can drag the widgets around!</p><p class="updated-at"></p></div><style>.widget-text {
+  background-color: #ec663c;
+}
+.widget-text .title {
+  color: rgba(255, 255, 255, 0.7);
+}
+.widget-text .more-info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.widget-text .updated-at {
+  color: rgba(255, 255, 255, 0.7);
+}
+.widget-text &.large h3 {
+    font-size: 65px;
+}</style></div></div></div><div class="grid-stack-item" gs-id="3" gs-w="1" gs-h="1" gs-x="1" gs-y="1"><div class="grid-stack-item-content"><div class="dummy-content">3 // meterI don't know how?</div></div></div><div class="grid-stack-item" gs-id="4" gs-w="1" gs-h="1" gs-x="2" gs-y="1"><div class="grid-stack-item-content"><div class="dummy-content">4 // meterI don't know how?</div></div></div><div class="grid-stack-item" gs-id="5" gs-w="1" gs-h="2" gs-x="0" gs-y="1"><div class="grid-stack-item-content"><div class="dummy-content">5 // listI don't know how?</div></div></div><div class="grid-stack-item" gs-id="6" gs-w="1" gs-h="1" gs-x="4" gs-y="0"><div class="grid-stack-item-content"><div class="dummy-content">6 // numberI don't know how?</div></div></div><div class="grid-stack-item" gs-id="7" gs-w="2" gs-h="2" gs-x="3" gs-y="1"><div class="grid-stack-item-content"><div class="dummy-content">7 // graphI don't know how?</div></div></div><div class="grid-stack-item" gs-id="8" gs-w="2" gs-h="1" gs-x="1" gs-y="2"><div class="grid-stack-item-content"><div class="dummy-content">8 // commentsI don't know how?</div></div></div></div></div><div class="bottomrow">curl -d '{ &quot;auth_token&quot;: &quot;YOUR_AUTH_TOKEN&quot;, &quot;text&quot;: &quot;Hey, Look what I can do!&quot; }' \http://&lt;%=request.host%&gt;:&lt;%=request.port%&gt;/widgets/welcome
+</div><style>body {
+  margin:0;
+  background: lightgoldenrodyellow;
+  font-family: "
+}
+.titlerow, .bottomrow {
+  background-color: #333;
+  color: #FFF;
+  font-weight: bold;
+  text-align:center;
+}
+.bottomrow {
+  position: static;
+  bottom: 100vh;
+}
+.dash {padding: 8px;}
+.grid-stack { }
+.grid-stack-item {
+  border: 1px solid white;
+}
+.grid-stack-item-content {
+  text-align: center;
+}
+.dummy-content{
+  background-color: #18bc9c;
+  color: #2c3e50;
+  height: 100%;
+}
+</style><script>var wcol = 5;var wrow = 3;var wstatic = true;</script><script>var options = {
+  staticGrid: wstatic,
+  styleInHead: true,
+  alwaysShowResizeHandle: false,
+  disableResize: true,
+  oneColumnSize: 512,
+  margin: 4,
+  //marginLeft: 8,
+  //marginRight: 8,
+  //marginTop: 8,
+  //marginBottom: 8,
+  cellHeight: Math.floor(95/wrow)+'vh',
+  column: wcol, // 1-12
+
+  //cellHeight: '150',
+  //disableOneColumnMode: true,
+  //float: false,
+  //row: 4,
+};
+var grid = GridStack.init(options);
+
+//grid.columns(5)
+//var grid = GridStack.init();
+//grid.load(serializedData);
+//grid.init()
+
+compactWidget = function() {
+  grid.compact()
+  return false;
+}</script>
+
+
+
+
+
+
+</body>
+</html>
