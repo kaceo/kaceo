@@ -1,3 +1,4 @@
+
 //const moment = require("moment");
 //const { DateTime } = require("luxon");
 const yaml = require("js-yaml");
@@ -271,6 +272,14 @@ console.log(global)
   https://www.11ty.dev/docs/data-global-custom/
 */
 
+  //======================================
+  // Eleventy Event Handling
+  //======================================
+
+  eleventyConfig.on("beforeBuild", () => {
+    // compile sass, postcss, tailwind
+    console.log('CSS compiled')
+  })
 
   //======================================
   // Eleventy Configuration Settings

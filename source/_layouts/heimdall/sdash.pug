@@ -1,0 +1,21 @@
+---
+layout: base
+
+common_css:
+  - "/assets/heimdall/css/fontawesome-all.min.css"
+  - "/assets/heimdall/css/sdash.css"
+
+---
+
+
+section#homepage
+  #itemlist
+    //-
+      a(title="Loading...")
+      i(class="fa-spin fas fa-spinner fa-fw")
+
+    each item in startconfig
+      a(href=item.link
+        title=item.alt)
+        i(class=item.icon+' fa-fw')
+

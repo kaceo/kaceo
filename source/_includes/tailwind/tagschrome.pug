@@ -3,7 +3,7 @@
 div(class="flex justify-center flex-wrap")
   each tagcount, tagname in tagsgroup
 
-    a(href='/tag/'+filters.slugify(tagname)
+    a(href='/tag/'+filters.slugify(tagname)+'/'
       class="inline-block mx-1 mb-3 px-4 py-2 bg-slate-200 text-slate-700 font-medium rounded-full"
     )
       = tagname

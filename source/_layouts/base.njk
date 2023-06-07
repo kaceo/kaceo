@@ -3,11 +3,9 @@
 <head>
 {%- include 'reusable/premeta.njk' -%}
 </head>
-<body>
+<body {% if bodyclass %}class="{{ bodyclass }}"{% endif %}>
 
-<main>
 {{ content | safe }}
-</main>
 
 {%- include 'reusable/postmeta.njk' -%}
 </body>

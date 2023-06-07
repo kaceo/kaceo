@@ -1,4 +1,10 @@
-{% if common_ext_js %}{% for js in common_ext_js %}
+{# -------------------------------
+External JS and CSS are placed at the end
+of the page, these are dependencies that
+do not affect the display of the page.
+ ------------------------------- #}
+{% if common_ext_js %}
+{% for js in common_ext_js %}
 {% if js.sri %}
 <script src="{{ js.href }}" integrity="{{ js.sri }}" crossorigin="anonymous"></script>
 {% elseif js.href %}
@@ -6,9 +12,20 @@
 {% else %}
 <script src="{{ js }}"></script>
 {% endif %}
-{% endfor %}{% endif %}
+{% endfor %}
+{% endif %}
+{# ------------------------------- #}
+{% if common_ext_css -%}
+{% for css in common_ext_css %}
+{% if css.sri %}
+<link rel="stylesheet" href="{{ css.href }}" integrity="{{ css.sri }}" crossorigin="anonymous">
+{% elseif css.href %}
+<link rel="stylesheet" href="{{ css.href }}">
+{% else %}
+<link rel="stylesheet" href="{{ css }}">
+{% endif %}
+{% endfor %}
+{% endif %}
+{# ------------------------------- #}
 
 
-{% if common_js %}{% for js in common_js %}
-<script src="{{ js | url }}"></script>
-{% endfor %}{% endif %}

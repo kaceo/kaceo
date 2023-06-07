@@ -1,0 +1,22 @@
+---
+layout: base
+
+common_css:
+  - "/assets/application.css"
+  - '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'
+
+common_js:
+  - "/assets/application.js"
+
+---
+#container
+  | !{content}
+
+if development
+  #saving-instructions
+    p
+      | Paste the following at the top of
+      i <%= params[:dashboard] %>.erb</i>
+    textarea#gridster-code
+  a#save-gridster(
+    href="#saving-instructions") Save this layout

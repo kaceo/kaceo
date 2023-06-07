@@ -1,5 +1,5 @@
 module.exports = {
-  layout: "page",
+  layout: "prose",
   title: "Untitled Post",
   tags: [
     "essays",

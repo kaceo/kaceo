@@ -1,11 +1,19 @@
 ---
 layout: base
 
-common_js:
-  - "https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"
+common_css:
+  - "/assets/tailwind.build.css"
+  #- "/assets/tailwind.old.css"
 
+
+#- "https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css"
+#common_js:
+#  - "https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"
+
+#bodyclass: "dark:bg-gray-600"
 ---
-.wrapper(
+//-
+  .wrapper(
   class="flex flex-col bg-white text-slate-800 break-words"
   xclass="h-screen")
 
@@ -22,5 +30,10 @@ common_js:
     include /tailwind/sidechrome.pug
 
   include /tailwind/postchrome.pug
+  class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative'
 
-
+#main
+  include /tailwind/prechrome.pug
+  .container.mx-auto.border.border-red-300.px-2
+    | !{ content }
+  include /tailwind/postchrome.pug

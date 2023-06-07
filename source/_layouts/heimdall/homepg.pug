@@ -1,0 +1,57 @@
+---
+layout: base
+
+common_css:
+  - "/assets/heimdall/css/font-awesome.min.css"
+  - "/assets/heimdall/css/bootstrap.min.css"
+  - "/assets/heimdall/css/main.css"
+
+common_ext_js:
+  - "/assets/heimdall/js/jquery.min.js"
+  - "/assets/heimdall/js/mousetrap.min.js"
+  - "/assets/heimdall/js/main.js"
+
+info: A start page based on Heimdall
+
+---
+h1= title
+
+div#bg-overlay &nbsp;
+
+span(class="fa fa-asterisk"
+  style="opacity: 0;") &nbsp;
+
+#mobile-menu-wrap(class="hidden-lg")
+  a(href="#"
+    class="bg"
+    aria-label="toggle-menu")
+    span(class="fa fa-bars") &nbsp;
+
+#clock-wrap(class="menu-item bg")
+  span#clock
+
+main#links-wrap(class="menu-item bg")
+  each item in startconfig
+    div(class="link col-md-4 col-sm-6 col-xs-12")
+      a(href=item.link
+        title=item.alt
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        if item.icon
+          i(class="fa fa-"+item.icon)
+        else
+          img(
+            alt=item.alt
+            src="/assets/heimdall/img/"+item.img
+            height="80" width="80"
+            loading="lazy")
+
+#pic-info-wrap(class="menu-item hidden bg")
+  span#pic-info
+    | Picture by
+    |
+    a#pic-info-url(href="#")
+    | /
+    a(href="https://unsplash.com/"
+    ) Unsplash

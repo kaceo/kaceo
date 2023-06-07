@@ -20,6 +20,7 @@ footbio: "We are a team of college students working on this project like it's ou
 
 keywords: ['special, ideas']
 paginate: 6
+rsslimit: 3
 excerpt_length: 100
 diqusShortname: ashortname
 

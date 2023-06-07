@@ -6,10 +6,12 @@
   "author": "Kace at Telematique <kaceong@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "tail": "tailwindcss -i ./eleventy/tailwind/tailwind.css -o ./source/res/tailwind.build.css --minify",
     "clean": "rimraf _site",
     "debug": "NODE_ENV=development DEBUG=Eleventy* eleventy --serve --config=eleventy.config.js",
     "serve": "NODE_ENV=development eleventy --serve --config=eleventy.config.js",
-    "build": "NODE_ENV=production eleventy --config=eleventy.config.js"
+    "build": "NODE_ENV=production eleventy --config=eleventy.config.js",
+    "start": "eleventy --serve & tailwindcss -i ./eleventy/tailwind/tailwind.css -o ./_site/assets/tailwind.build.css --watch"
   },
   "dependencies": {
     "axios": "^1.4.0"
@@ -21,16 +23,21 @@
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^3.0.3",
     "eleventy-plugin-pwa": "^1.0.8",
+    "gridstack": "^8.2.1",
     "js-yaml": "^4.1.0",
     "luxon": "^3.3.0",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-container": "^3.0.0",
     "markdown-it-container-pandoc": "^1.0.0",
+    "postcss": "^8.4.24",
+    "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.2",
-    "@tailwindcss/typography": "^0.5.9",
-    "rimraf": "^5.0.1"
+    "vite": "^4.3.9"
   },
   "nonDev": {
     "moment": "^2.29.4",

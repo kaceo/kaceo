@@ -1,7 +1,7 @@
 ---
-permalink: "/links/"
+permalink: "/networks/"
 layout: page
-title: Favourite Links
+title: State of the Network
 ---
 
 # {{ title }}

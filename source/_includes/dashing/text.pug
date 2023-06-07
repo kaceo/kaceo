@@ -1,0 +1,22 @@
+.widget-text
+  h1.title= me.title
+  h3= me.text
+  p.more-info= me.moreinfo
+  p.updated-at= me.updatedAtMessage
+
+style.
+  .widget-text {
+    background-color: #{me.bgcolor || "#ec663c;"}
+  }
+  .widget-text .title {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .widget-text .more-info {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .widget-text .updated-at {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .widget-text &.large h3 {
+      font-size: 65px;
+  }

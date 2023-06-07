@@ -1,0 +1,133 @@
+---
+layout: base
+
+common_js:
+  - "/assets/dashing/gridstack-all.js"
+
+common_css:
+  - "/assets/dashing/gridstack.min.css"
+  - "/assets/dashing/gridstack-extra.min.css"
+
+## types from _includes/dashing
+##-----------------------------
+# -- anaclock
+# clock
+# comments (*twitter)
+#  -- countdown
+#  -- dilbert (*)
+#  -- forex (*)
+# graph
+#  -- iframe
+# image
+#  -- ipcam (*)
+# list
+# meter
+# number
+# text
+#  -- weather (*)
+#  -- xkcd (*)
+#
+knowntypes:
+  - text
+  - image
+  #- number
+
+---
+.titlerow= title
+.dash
+  .grid-stack
+    each item,i in dashboard.components
+      - var mt = item.type
+      - var me = item.data
+      .grid-stack-item(gs-id=i
+        gs-w=item.gwh[0]
+        gs-h=item.gwh[1]
+        gs-x=item.gxy[0]-1
+        gs-y=item.gxy[1]-1
+      )
+        .grid-stack-item-content
+          unless knowntypes.includes(mt)
+            .dummy-content
+              = i + ' // ' + item.type
+              | I don't know how?
+          else
+            .dummy-content
+              case mt
+                when 'text'
+                  include /dashing/text.pug
+                when 'image'
+                  include /dashing/image.pug
+                default
+                  | Huh???
+                  = mt
+.bottomrow= message
+
+
+//------ Where the Magic Happens -----
+style.
+  body {
+    margin:0;
+    background: lightgoldenrodyellow;
+    font-family: "
+  }
+  .titlerow, .bottomrow {
+    background-color: #333;
+    color: #FFF;
+    font-weight: bold;
+    text-align:center;
+  }
+  .bottomrow {
+    position: static;
+    bottom: 100vh;
+  }
+  .dash {padding: 8px;}
+  .grid-stack { }
+  .grid-stack-item {
+    border: 1px solid white;
+  }
+  .grid-stack-item-content {
+    text-align: center;
+  }
+  .dummy-content{
+    background-color: #18bc9c;
+    color: #2c3e50;
+    height: 100%;
+  }
+
+script
+  = 'var wcol = '+dashboard.grid[0]+';'
+  = 'var wrow = '+ dashboard.grid[1]+';'
+  = 'var wstatic = '+ dashboard.static+';'
+script.
+  var options = {
+    staticGrid: wstatic,
+    styleInHead: true,
+    alwaysShowResizeHandle: false,
+    disableResize: true,
+    oneColumnSize: 512,
+    margin: 4,
+    //marginLeft: 8,
+    //marginRight: 8,
+    //marginTop: 8,
+    //marginBottom: 8,
+    cellHeight: Math.floor(95/wrow)+'vh',
+    column: wcol, // 1-12
+
+    //cellHeight: '150',
+    //disableOneColumnMode: true,
+    //float: false,
+    //row: 4,
+  };
+  var grid = GridStack.init(options);
+
+  //grid.columns(5)
+  //var grid = GridStack.init();
+  //grid.load(serializedData);
+  //grid.init()
+
+  compactWidget = function() {
+    grid.compact()
+    return false;
+  }
+
+

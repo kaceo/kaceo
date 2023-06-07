@@ -2,7 +2,9 @@
 //---------------------------------
 //-include /tailwind/postchrome.pug
 //---------------------------------
-footer(class="mt-20 px-10 py-8 bg-slate-200")
+
+//-
+  footer(class="mt-20 px-10 py-8 bg-slate-200")
   div(class="max-w-5xl mx-auto text-slate-700 text-center")
     | © 2023&nbsp;
     a(href='/'
@@ -23,3 +25,40 @@ footer(class="mt-20 px-10 py-8 bg-slate-200")
       each item in menus.bottom_menus
         li
           a.nav-link(href=item.url)= item.name
+
+
+div(class="container mx-auto")
+  div(class="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12")
+    div(class="mr-auto flex flex-col items-center sm:flex-row")
+      a(href="/" class="mr-auto sm:mr-6")
+        img(src="/assets/atlaslogo.svg" alt="logo")
+      p(class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0"
+      ) ©2020 John Doe.
+    div(class="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0")
+      a(href="https://github.com/ " target="_blank")
+        i(class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github")
+      a(href="https://codepen.io/ " target="_blank")
+        i(class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-codepen")
+      a(href="https://www.linkedin.com/ " target="_blank")
+        i(class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin")
+    div(class="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0")
+      each item in menus.bottom_menus
+        a.nav-link(href=item.url)= item.name
+
+
+
+//-
+  .container.mx-auto
+  .flex.flex-col.items-center.justify-between.border-t.border-grey-lighter.py-10(class="sm:flex-row sm:py-12")
+    .mr-auto.flex.flex-col.items-center(class="sm:flex-row")
+      a.mr-auto(href="/" class="sm:mr-6")
+        img(src="/assets/img/logo.svg" alt="logo")
+      p.pt-5.font-body.font-light.text-primary(class="dark:text-white sm:pt-0")
+        | ©2020 John Doe.
+    .mr-auto.flex.items-center.pt-5(class="sm:mr-0 sm:pt-0")
+      a(href="https://github.com/ " target="_blank")
+        i.text-4xl.text-primary.pl-5.transition-colors.bx.bxl-github(class="dark:text-white hover:text-secondary dark:hover:text-secondary")
+      a(href="https://codepen.io/ " target="_blank")
+        i.text-4xl.text-primary.pl-5.transition-colors.bx.bxl-codepen(class="dark:text-white hover:text-secondary dark:hover:text-secondary")
+      a(href="https://www.linkedin.com/ " target="_blank")
+        i.text-4xl.text-primary.pl-5.transition-colors.bx.bxl-linkedin(class="dark:text-white hover:text-secondary dark:hover:text-secondary")
