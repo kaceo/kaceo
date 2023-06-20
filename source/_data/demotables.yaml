@@ -1,0 +1,399 @@
+-
+  name: Tiger Nixon
+  pos: System Architect
+  geo: Edinburgh
+  age: 61
+  start: 2011/04/25
+  sal: $320,800
+-
+  name: Garrett Winters
+  pos: Accountant
+  geo: Tokyo
+  age: 63
+  start: 2011/07/25
+  sal: $170,750
+-
+  name: Ashton Cox
+  pos: Junior Technical Author
+  geo: San Francisco
+  age: 66
+  start: 2009/01/12
+  sal: $86,000
+-
+  name: Cedric Kelly
+  pos: Senior Javascript Developer
+  geo: Edinburgh
+  age: 22
+  start: 2012/03/29
+  sal: $433,060
+-
+  name: Airi Satou
+  pos: Accountant
+  geo: Tokyo
+  age: 33
+  start: 2008/11/28
+  sal: $162,700
+-
+  name: Brielle Williamson
+  pos: Integration Specialist
+  geo: New York
+  age: 61
+  start: 2012/12/02
+  sal: $372,000
+-
+  name: Herrod Chandler
+  pos: Sales Assistant
+  geo: San Francisco
+  age: 59
+  start: 2012/08/06
+  sal: $137,500
+-
+  name: Rhona Davidson
+  pos: Integration Specialist
+  geo: Tokyo
+  age: 55
+  start: 2010/10/14
+  sal: $327,900
+-
+  name: Colleen Hurst
+  pos: Javascript Developer
+  geo: San Francisco
+  age: 39
+  start: 2009/09/15
+  sal: $205,500
+-
+  name: Sonya Frost
+  pos: Software Engineer
+  geo: Edinburgh
+  age: 23
+  start: 2008/12/13
+  sal: $103,600
+-
+  name: Jena Gaines
+  pos: Office Manager
+  geo: London
+  age: 30
+  start: 2008/12/19
+  sal: $90,560
+-
+  name: Quinn Flynn
+  pos: Support Lead
+  geo: Edinburgh
+  age: 22
+  start: 2013/03/03
+  sal: $342,000
+-
+  name: Charde Marshall
+  pos: Regional Director
+  geo: San Francisco
+  age: 36
+  start: 2008/10/16
+  sal: $470,600
+-
+  name: Haley Kennedy
+  pos: Senior Marketing Designer
+  geo: London
+  age: 43
+  start: 2012/12/18
+  sal: $313,500
+-
+  name: Tatyana Fitzpa-ick
+  pos: Regional Director
+  geo: London
+  age: 19
+  start: 2010/03/17
+  sal: $385,750
+-
+  name: Michael Silva
+  pos: Marketing Designer
+  geo: London
+  age: 66
+  start: 2012/11/27
+  sal: $198,500
+-
+  name: Paul Byrd
+  pos: Chief Financial Officer (CFO)
+  geo: New York
+  age: 64
+  start: 2010/06/09
+  sal: $725,000
+-
+  name: Gloria Little
+  pos: Systems Adminis-ator
+  geo: New York
+  age: 59
+  start: 2009/04/10
+  sal: $237,500
+-
+  name: Bradley Greer
+  pos: Software Engineer
+  geo: London
+  age: 41
+  start: 2012/10/13
+  sal: $132,000
+-
+  name: Dai Rios
+  pos: Personnel Lead
+  geo: Edinburgh
+  age: 35
+  start: 2012/09/26
+  sal: $217,500
+-
+  name: Jenette Caldwell
+  pos: Development Lead
+  geo: New York
+  age: 30
+  start: 2011/09/03
+  sal: $345,000
+-
+  name: Yuri Berry
+  pos: Chief Marketing Officer (CMO)
+  geo: New York
+  age: 40
+  start: 2009/06/25
+  sal: $675,000
+-
+  name: Caesar Vance
+  pos: Pre-Sales Support
+  geo: New York
+  age: 21
+  start: 2011/12/12
+  sal: $106,450
+-
+  name: Doris Wilder
+  pos: Sales Assistant
+  geo: Sydney
+  age: 23
+  start: 2010/09/20
+  sal: $85,600
+-
+  name: Angelica Ramos
+  pos: Chief Executive Officer (CEO)
+  geo: London
+  age: 47
+  start: 2009/10/09
+  sal: $1,200,000
+-
+  name: Gavin Joyce
+  pos: Developer
+  geo: Edinburgh
+  age: 42
+  start: 2010/12/22
+  sal: $92,575
+-
+  name: Jennifer Chang
+  pos: Regional Director
+  geo: Singapore
+  age: 28
+  start: 2010/11/14
+  sal: $357,650
+-
+  name: Brenden Wagner
+  pos: Software Engineer
+  geo: San Francisco
+  age: 28
+  start: 2011/06/07
+  sal: $206,850
+-
+  name: Fiona Green
+  pos: Chief Operating Officer (COO)
+  geo: San Francisco
+  age: 48
+  start: 2010/03/11
+  sal: $850,000
+-
+  name: Shou Itou
+  pos: Regional Marketing
+  geo: Tokyo
+  age: 20
+  start: 2011/08/14
+  sal: $163,000
+-
+  name: Michelle House
+  pos: Integration Specialist
+  geo: Sydney
+  age: 37
+  start: 2011/06/02
+  sal: $95,400
+-
+  name: Suki Burks
+  pos: Developer
+  geo: London
+  age: 53
+  start: 2009/10/22
+  sal: $114,500
+-
+  name: Prescott Bartlett
+  pos: Technical Author
+  geo: London
+  age: 27
+  start: 2011/05/07
+  sal: $145,000
+-
+  name: Gavin Cortez
+  pos: Team Leader
+  geo: San Francisco
+  age: 22
+  start: 2008/10/26
+  sal: $235,500
+-
+  name: Martena Mccray
+  pos: Post-Sales support
+  geo: Edinburgh
+  age: 46
+  start: 2011/03/09
+  sal: $324,050
+-
+  name: Unity Butler
+  pos: Marketing Designer
+  geo: San Francisco
+  age: 47
+  start: 2009/12/09
+  sal: $85,675
+-
+  name: Howard Hatfield
+  pos: Office Manager
+  geo: San Francisco
+  age: 51
+  start: 2008/12/16
+  sal: $164,500
+-
+  name: Hope Fuentes
+  pos: Secretary
+  geo: San Francisco
+  age: 41
+  start: 2010/02/12
+  sal: $109,850
+-
+  name: Vivian Harrell
+  pos: Financial Con-oller
+  geo: San Francisco
+  age: 62
+  start: 2009/02/14
+  sal: $452,500
+-
+  name: Timothy Mooney
+  pos: Office Manager
+  geo: London
+  age: 37
+  start: 2008/12/11
+  sal: $136,200
+-
+  name: Jackson Bradshaw
+  pos: Director
+  geo: New York
+  age: 65
+  start: 2008/09/26
+  sal: $645,750
+-
+  name: Olivia Liang
+  pos: Support Engineer
+  geo: Singapore
+  age: 64
+  start: 2011/02/03
+  sal: $234,500
+-
+  name: Bruno Nash
+  pos: Software Engineer
+  geo: London
+  age: 38
+  start: 2011/05/03
+  sal: $163,500
+-
+  name: Sakura Yamamoto
+  pos: Support Engineer
+  geo: Tokyo
+  age: 37
+  start: 2009/08/19
+  sal: $139,575
+-
+  name: Thor Walton
+  pos: Developer
+  geo: New York
+  age: 61
+  start: 2013/08/11
+  sal: $98,540
+-
+  name: Finn Camacho
+  pos: Support Engineer
+  geo: San Francisco
+  age: 47
+  start: 2009/07/07
+  sal: $87,500
+-
+  name: Serge Baldwin
+  pos: Data Coordinator
+  geo: Singapore
+  age: 64
+  start: 2012/04/09
+  sal: $138,575
+-
+  name: Zenaida Frank
+  pos: Software Engineer
+  geo: New York
+  age: 63
+  start: 2010/01/04
+  sal: $125,250
+-
+  name: Zorita Serrano
+  pos: Software Engineer
+  geo: San Francisco
+  age: 56
+  start: 2012/06/01
+  sal: $115,000
+-
+  name: Jennifer Acosta
+  pos: Junior Javascript Developer
+  geo: Edinburgh
+  age: 43
+  start: 2013/02/01
+  sal: $75,650
+-
+  name: Cara Stevens
+  pos: Sales Assistant
+  geo:  New York
+  age: 46
+  start: 2011/12/06
+  sal: $145,600
+-
+  name: Hermione Butler
+  pos: Regional Director
+  geo: London
+  age: 47
+  start: 2011/03/21
+  sal: $356,250
+-
+  name: Lael Greer
+  pos: Systems Adminis-ator
+  geo: London
+  age: 21
+  start: 2009/02/27
+  sal: $103,500
+-
+  name: Jonas Alexander
+  pos: Developer
+  geo: San Francisco
+  age: 30
+  start: 2010/07/14
+  sal: $86,500
+-
+  name: Shad Decker
+  pos: Regional Director
+  geo: Edinburgh
+  age: 51
+  start: 2008/11/13
+  sal: $183,000
+-
+  name: Michael Bruce
+  pos: Javascript Developer
+  geo: Singapore
+  age: 29
+  start: 2011/06/27
+  sal: $183,000
+-
+  name: Donna Snider
+  pos: Customer Support
+  geo: New York
+  age: 27
+  start: 2011/01/25
+  sal: $112,000

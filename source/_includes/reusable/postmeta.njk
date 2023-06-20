@@ -2,28 +2,23 @@
 External JS and CSS are placed at the end
 of the page, these are dependencies that
 do not affect the display of the page.
- ------------------------------- #}
-{% if common_ext_js %}
-{% for js in common_ext_js %}
-{% if js.sri %}
-<script src="{{ js.href }}" integrity="{{ js.sri }}" crossorigin="anonymous"></script>
-{% elseif js.href %}
-<script src="{{ js.href }}"></script>
-{% else %}
-<script src="{{ js }}"></script>
-{% endif %}
+{# ------------------------------- #}
+{% if common_ext_css %}
+{% for css in common_ext_css %}
+<link rel="stylesheet"
+{% if css.href %}href="{{ css.href }}"{% else %}href="{{ css }}"{% endif %}
+{% if css.sri %}integrity="{{ css.sri }}"{% endif %}
+crossorigin="anonymous">
 {% endfor %}
 {% endif %}
 {# ------------------------------- #}
-{% if common_ext_css -%}
-{% for css in common_ext_css %}
-{% if css.sri %}
-<link rel="stylesheet" href="{{ css.href }}" integrity="{{ css.sri }}" crossorigin="anonymous">
-{% elseif css.href %}
-<link rel="stylesheet" href="{{ css.href }}">
-{% else %}
-<link rel="stylesheet" href="{{ css }}">
-{% endif %}
+{% if common_ext_js %}
+{% for js in common_ext_js %}
+<script
+{% if js.type %}type="{{ js.type }}"{% endif %}
+{% if js.href %}src="{{ js.href }}"{% else %}src="{{ js }}"{% endif %}
+{% if js.sri %}integrity="{{ js.sri }}"{% endif %}
+crossorigin="anonymous"></script>
 {% endfor %}
 {% endif %}
 {# ------------------------------- #}

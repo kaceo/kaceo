@@ -1,5 +1,5 @@
 ---
-permalink: "/tags/{{ tag | slugify }}/"
+permalink: /tags/{{ tag | slugify }}/
 layout: page
 
 pagination:
@@ -14,13 +14,13 @@ pagination:
   addAllPagesToCollections: true
 
 eleventyComputed:
-  title: Tagged "{{ tag }}"
+  title: Tagged “{{ tag }}”
 
 ---
 
-<h1>{{ title }}</h1>
-<p>See <a href="/tags/">all tags</a>.</p>
-
+<h1>Tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "posts/postslist.njk" %}
+
+<p>See <a href="/tags/">all tags</a>.</p>

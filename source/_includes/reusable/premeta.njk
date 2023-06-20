@@ -24,13 +24,21 @@ Internal JS and CSS are placed in the head
 of the page, these are dependencies that
 should be loaded before display of the page.
  ------------------------------- #}
-{% if common_css -%}
+{% if common_css %}
 {% for css in common_css %}
-<link href="{{ css }}" rel="stylesheet"/>
-{% endfor %}{% endif %}
+<link rel="stylesheet"
+{% if css.href %}href="{{ css.href }}"{% else %}href="{{ css }}"{% endif %}
+{% if css.sri %}integrity="{{ css.sri }}"{% endif %}
+crossorigin="anonymous">
+{% endfor %}
+{% endif %}
 {# ------------------------------- #}
-{% if common_js -%}
+{% if common_js %}
 {% for js in common_js %}
-<script src="{{ js }}" type="text/javascript"></script>
-{% endfor %}{% endif %}
-{# ------------------------------- #}
+<script
+{% if js.type %}type="{{ js.type }}"{% endif %}
+{% if js.href %}src="{{ js.href }}"{% else %}src="{{ js }}"{% endif %}
+{% if js.sri %}integrity="{{ js.sri }}"{% endif %}
+crossorigin="anonymous"></script>
+{% endfor %}
+{% endif %}

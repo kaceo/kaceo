@@ -1,0 +1,65 @@
+---
+layout: base
+
+common_js:
+  - href: "/assets/threejs/model-viewer_3.1.1_model-viewer.min.js"
+    type: 'module'
+
+#  - "https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+# - src: "https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+
+---
+//-
+  script(type="importmap").
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@^0.152.1/build/three.module.min.js"
+      }
+    }
+  script(type="module"
+    src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js")
+  script(type="module"
+    src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js")
+  script(type="module"
+  src="/assets/threejs/model-viewer_3.1.1_model-viewer.min.js")
+
+style.
+  model-viewer{
+    width:100%; height:80vh;
+    border:1px solid red;background-color:#EEE;
+  }
+
+p Hello this is 3D
+
+model-viewer( ar
+  alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+  src="/kaceo/assets/models/NeilArmstrong.glb"
+  environment-image="/kaceo/assets/models/moon_1k.hdr"
+  poster="/kaceo/assets/models/NeilArmstrong.webp"
+  shadow-intensity="1"
+  camera-controls
+  touch-action="pan-y"
+  )
+
+//-model-viewer(
+  autoplay
+  ar
+  camera-controls
+  touch-action="pan-y"
+  src="../../shared-assets/models/Horse.glb"
+  alt="A 3D model of a horse galloping."
+  )
+  effect-composer
+    pixelate-effect
+
+//-model-viewer(
+  autoplay
+  alt="A Spaceman"
+  aqsrc="/kaceo/assets/models/Astronaut.glb"
+  xsrc="/kaceo/assets/models/RobotExpressive.glb"
+  src="/kaceo/assets/models/eve.glb"
+  ar
+  shadow-intensity="1"
+  camera-controls
+  touch-action="pan-y"
+  )

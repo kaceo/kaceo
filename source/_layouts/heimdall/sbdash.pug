@@ -1,0 +1,237 @@
+---
+layout: base
+
+source_repo: https://startbootstrap.com/template/sb-admin
+unused_resourcs:
+  #- "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+  #- "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+  #- "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  #- "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  #- "https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
+
+
+common_css:
+  - "/assets/sbdash/local-bootstrap.css"
+
+common_js:
+  - "https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+
+common_ext_css:
+
+common_ext_js:
+  #Bootstrap JS Bundle
+  - "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  #Global Template Scripts
+  - "/assets/sbdash/sbmain.js"
+  #
+  - "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+  - "/assets/sbdash/chart-area-demo.js"
+  - "/assets/sbdash/chart-bar-demo.js"
+  #
+  - "https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+  - "/assets/sbdash/datatables-simple-demo.js"
+
+---
+
+//- (include topnav)-------------------------------
+nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
+  // Navbar Brand
+  a.navbar-brand.ps-3(
+    href="index.html") Start Bootstrap
+  // Sidebar Toggle
+  button#sidebarToggle.btn.btn-link.btn-sm.order-1.order-lg-0.me-4.me-lg-0(
+    href="#!")
+    i.fas.fa-bars
+  // Navbar Search
+  form.d-none.d-md-inline-block.form-inline.ms-auto.me-0.me-md-3.my-2.my-md-0
+    .input-group
+      input.form-control(
+        type="text" placeholder="Search for..."
+        aria-label="Search for..."
+        aria-describedby="btnNavbarSearch")
+      button#btnNavbarSearch.btn.btn-primary(type="button")
+        i.fas.fa-search
+  // Navbar
+  ul.navbar-nav.ms-auto.ms-md-0.me-3.me-lg-4
+    li.nav-item.dropdown
+      a#navbarDropdown.nav-link.dropdown-toggle(
+        href="#" role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false")
+        i.fas.fa-user.fa-fw
+      ul.dropdown-menu.dropdown-menu-end(aria-labelledby="navbarDropdown")
+        li
+          a.dropdown-item(href="#!") Settings
+        li
+          a.dropdown-item(href="#!") Activity Log
+        li
+          hr.dropdown-divider
+        li
+          a.dropdown-item(href="#!") Logout
+
+
+#layoutSidenav
+  #layoutSidenav_nav
+
+    //- (include sidenav)-------------------------------
+    nav#sidenavAccordion.sb-sidenav.accordion.sb-sidenav-dark
+      .sb-sidenav-menu
+        .nav
+          .sb-sidenav-menu-heading Core
+          a.nav-link(href="index.html")
+            .sb-nav-link-icon
+              i.fas.fa-tachometer-alt
+            |                                 Dashboard
+          .sb-sidenav-menu-heading Interface
+          a.nav-link.collapsed(href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts")
+            .sb-nav-link-icon
+              i.fas.fa-columns
+            |                                 Layouts
+            .sb-sidenav-collapse-arrow
+              i.fas.fa-angle-down
+          #collapseLayouts.collapse(aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion")
+            nav.sb-sidenav-menu-nested.nav
+              a.nav-link(href="layout-static.html") Static Navigation
+              a.nav-link(href="layout-sidenav-light.html") Light Sidenav
+          a.nav-link.collapsed(href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages")
+            .sb-nav-link-icon
+              i.fas.fa-book-open
+            |                                 Pages
+            .sb-sidenav-collapse-arrow
+              i.fas.fa-angle-down
+          #collapsePages.collapse(aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion")
+            nav#sidenavAccordionPages.sb-sidenav-menu-nested.nav.accordion
+              a.nav-link.collapsed(href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth")
+                | Authentication
+                .sb-sidenav-collapse-arrow
+                  i.fas.fa-angle-down
+              #pagesCollapseAuth.collapse(aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages")
+                nav.sb-sidenav-menu-nested.nav
+                  a.nav-link(href="login.html") Login
+                  a.nav-link(href="register.html") Register
+                  a.nav-link(href="password.html") Forgot Password
+              a.nav-link.collapsed(href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError")
+                | Error
+                .sb-sidenav-collapse-arrow
+                  i.fas.fa-angle-down
+              #pagesCollapseError.collapse(aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages")
+                nav.sb-sidenav-menu-nested.nav
+                  a.nav-link(href="401.html") 401 Page
+                  a.nav-link(href="404.html") 404 Page
+                  a.nav-link(href="500.html") 500 Page
+          .sb-sidenav-menu-heading Addons
+          a.nav-link(href="charts.html")
+            .sb-nav-link-icon
+              i.fas.fa-chart-area
+            |                                 Charts
+          a.nav-link(href="tables.html")
+            .sb-nav-link-icon
+              i.fas.fa-table
+            |                                 Tables
+      .sb-sidenav-footer
+        .small Logged in as:
+        |                         Start Bootstrap
+
+
+  #layoutSidenav_content
+    main
+
+
+      //- (block content)-------------------------------
+      .container-fluid.px-4
+
+        //- (include page-header)-------------------------------
+        h1.mt-4 Dashboard
+        ol.breadcrumb.mb-4
+          li.breadcrumb-item.active Dashboard
+
+        .row
+          .col-xl-3.col-md-6
+            .card.bg-primary.text-white.mb-4
+              .card-body Primary Card
+              .card-footer.d-flex.align-items-center.justify-content-between
+                a.small.text-white.stretched-link(href="#") View Details
+                .small.text-white
+                  i.fas.fa-angle-right
+          .col-xl-3.col-md-6
+            .card.bg-warning.text-white.mb-4
+              .card-body Warning Card
+              .card-footer.d-flex.align-items-center.justify-content-between
+                a.small.text-white.stretched-link(href="#") View Details
+                .small.text-white
+                  i.fas.fa-angle-right
+          .col-xl-3.col-md-6
+            .card.bg-success.text-white.mb-4
+              .card-body Success Card
+              .card-footer.d-flex.align-items-center.justify-content-between
+                a.small.text-white.stretched-link(href="#") View Details
+                .small.text-white
+                  i.fas.fa-angle-right
+          .col-xl-3.col-md-6
+            .card.bg-danger.text-white.mb-4
+              .card-body Danger Card
+              .card-footer.d-flex.align-items-center.justify-content-between
+                a.small.text-white.stretched-link(href="#") View Details
+                .small.text-white
+                  i.fas.fa-angle-right
+
+        .row
+          .col-xl-6
+            .card.mb-4
+              .card-header
+                i.fas.fa-chart-area.me-1
+                |                                         Area Chart Example
+              .card-body
+                canvas#myAreaChart(width="100%" height="40")
+          .col-xl-6
+            .card.mb-4
+              .card-header
+                i.fas.fa-chart-bar.me-1
+                |                                         Bar Chart Example
+              .card-body
+                canvas#myBarChart(width="100%" height="40")
+
+        .card.mb-4
+          .card-header
+            i.fas.fa-table.me-1
+            |    DataTable Example
+          .card-body
+            //- (include datatable)-------------------------------
+            table#datatablesSimple
+              thead
+                tr
+                  th Name
+                  th Position
+                  th Office
+                  th Age
+                  th Start date
+                  th Salary
+              tfoot
+                tr
+                  th Name
+                  th Position
+                  th Office
+                  th Age
+                  th Start date
+                  th Salary
+              tbody
+                each p in demotables
+                  tr
+                    td= p.name
+                    td= p.pos
+                    td= p.geo
+                    td= p.age
+                    td= p.start
+                    td= p.sal
+
+
+    //- (include footer)-------------------------------
+    footer.py-4.bg-light.mt-auto
+      .container-fluid.px-4
+        .d-flex.align-items-center.justify-content-between.small
+          .text-muted Copyright &copy; Your Website 2023
+          div
+            a(href="#") Privacy Policy
+            |                                 &middot;
+            |
+            a(href="#") Terms &amp; Conditions
