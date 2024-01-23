@@ -1,0 +1,346 @@
+media:
+
+- name: MCS 5
+  lang: en
+- name: MCS 8
+  lang: cn
+- name: MCS U
+  lang: cn
+- name: CNA
+  url: https://www.channelnewsasia.com
+  lang: en
+  tag: [news]
+- name: RT
+  lang: en
+  tag: [news]
+- name: TV5 Monde
+  lang: en
+- name: DW
+  lang: en
+- name: BBC World News
+  lang: en
+  tag: [news]
+- name: Fox News
+  lang: en
+- name: Sky News
+  lang: en
+- name: Bloomberg
+- name: CNN Headlines
+- name: CCTV
+
+
+- name: Youtube
+  url: https://www.youtube.com
+  lang: en
+
+- name: Plex
+  url: https://plex.tv
+  lang: en
+
+- name: Vimeo
+  url: https://vimeo.com
+  lang: en
+
+- name: Pluto TV
+  url: https://www.pluto.tv
+  lang: en
+
+- name: MUBI
+  url: https://mubi.com
+  lang: en
+
+- name: Tubi
+  url: https://tubi.tv
+  lang: en
+
+- name: Disney+
+  url: https://www.disneyplus.com
+  lang: en
+
+- name: Prime Video
+  url: https://www.primevideo.com
+  lang: en
+
+- name: ABC
+  url: https://www.abc.com
+  lang: en
+
+- name: NBC
+  url: https://www.nbc.com
+  lang: en
+
+- name: CBS
+  url: https://www.cbs.com
+  lang: en
+
+- name: Fox
+  url: https://www.fox.com
+  lang: en
+
+- name: CNBC
+  url: https://www.cnbc.com
+
+- name: Disney
+- name: Cartoon Network
+- name: Boomerang
+- name: Nickelodeon
+
+
+- name: History
+- name: H2
+- name: Crime & Investigation
+- name: FYI
+- name: BBC Earth
+- name: NGC
+- name: NatGeo People
+- name: NatGeo Wild
+- name: Discovery
+- name: Disc Science
+- name: Animal Planet
+- name: Eve
+- name: DMAX
+- name: TLC
+- name: RTL CBS Extreme
+- name: BBC Lifestyle
+- name: Food Network
+- name: Asian Food Channel
+- name: HGTV
+- name: E!
+- name: Fashion One
+- name: FTV
+- name: TruTV
+- name: AustraliaPlus
+- name: Travel Channel
+- name: Discovery
+- name: NatGeo
+
+- name: Star World
+- name: Fox Crime
+- name: Fox
+- name: FX
+- name: RTL CBS Entertainment
+- name: Sony Channel
+- name: AXN
+- name: Universal
+- name: DIVA
+- name: Lifetime
+- name: Warner TV
+- name: Comedy Central Asia
+- name: Syfy
+- name: KIX
+- name: HITS
+- name: BBC Entertainment
+- name: BBC First
+- name: MTV Asia
+- name: NatGeo Music
+- name: HBO
+- name: HBO Signature
+- name: HBO Family
+- name: HBO Hits
+- name: DreamWorks
+- name: Disney Movies
+- name: Cinemax World
+- name: Turner Clasic Movies
+- name: Thrill
+- name: FOX Movies Premium
+- name: FOX Movies Play
+- name: FOX Family Movies
+- name: FOX Action Movies
+
+- name: Phoenix
+- name: TVBS
+- name: WakuWaku
+  lang: jp
+- name: NHK World
+  lang: jp
+- name: KBS World
+  lang: kr
+- name: Arirang
+  lang: kr
+- name: Xing Kong
+  lang: cn
+- name: Star Chinese
+  lang: cn
+- name: Channel M
+- name: E City
+- name: CTI
+- name: TVB Pearl
+- name: TVB Jade
+- name: Dragon TV
+- name: Asia Travel
+- name: Now TV
+- name: TVBJ
+- name: '[V] China'
+  tag: [music]
+- name: '[V] Taiwan'
+  tag: [music]
+- name: VV Drama
+- name: TVB Classic
+- name: TVB Xing He
+- name: TVB First
+- name: Now Baogu Movies
+  tag: [movies]
+- name: Star Chinese Movies
+  tag: [movies]
+- name: Star Chinese Movies Legend
+  tag: [movies]
+- name: Celestial Movies
+  tag: [movies]
+- name: Celestial Classic Movies
+  tag: [movies]
+
+others:
+
+
+  - Me Watch
+
+
+  - We TV
+
+
+  - CNA
+
+  - Peacock TV
+
+  - Bloomberg
+
+  - Sling
+
+  - Hulu
+
+  - Spectrum
+
+  - Global TV
+
+  - NHK
+
+  - KBS World
+
+
+  - aDrama
+
+  - HDMovies
+
+  - HDtoday
+
+  - Stremiio
+
+  - Netflix
+
+  - TVB Anywhere
+
+  - Hoy
+
+  - Now TV
+
+  - Amazon Freevee
+
+  - Roku
+
+  - Youtube TV
+
+  - HBO Max
+
+  - Starhub TV+
+
+  - Singtel TV Go
+
+  - BBC Player
+
+  - TV5 Monde
+
+  - DW English
+
+  - RT
+
+  - ABC Australia
+
+  - PBS
+
+  - NPR
+
+  - CBC Canada
+
+
+  - Fox
+
+  - Newsmax
+
+  - Twit.tv
+
+  - CNN
+
+  - VOA
+
+  - Al Jazeera
+
+  - France 24
+
+  - La Nacion Mas Argentina
+
+  - C5N Argentina
+
+  - Todo Noticias Argentina
+
+  - Canal 26
+
+  - Retro TV
+
+  - Adult Swim
+
+  - Cronica TV
+
+  - Euronews
+
+  - Hokkaido TV
+
+  - ATV Hong Kong
+
+  - Vudu
+
+  - ViuTV
+
+  - Just Watch Club
+
+  - Rakuten Viki
+
+  - Iqiyi
+
+  - iFlix
+
+  - Afreeca TV
+
+  - Paramount+
+
+  - Popcornflix
+
+  - SkyTV cinema
+
+  - Stan
+
+  - Sidereel
+
+  - Kanopy
+
+  - CW Network
+
+  - Crackle
+
+  - Discovery+
+
+  - ITV Hub
+
+  - Kodi
+
+  - Trakt
+
+  - Odysee
+
+  - Lbry
+
+  - Nebula
+
+
+
+
+

@@ -1,0 +1,38 @@
+---
+permalink: "/watch/"
+dynamicPermalink: false
+layout: page
+---
+
+- var mymedia = media
+
+h1 WATCHING
+
+.tabs.tabs-boxed
+  a.tab(onclick="do('news')") News
+  a.tab Reality
+  a.tab Sports
+  a.tab Variety
+  a.tab Drama
+  a.tab Movies
+  a.tab(onclick="do('music')") Music
+
+script.
+  var mymedia = media
+  function do(n) {
+    mymedia = media.filter(i => i.tag && i.tag.includes(n))
+  }
+
+.flex.flex-wrap.text-center
+  each i in mymedia
+    .flex-none.border.h-20(class="w-1/6")
+      a(href=i.url  target="_BLANK" )
+        b= i.name
+
+.tabs.tabs-boxed
+  a.tab EN
+  a.tab CN
+  a.tab JP
+  a.tab KR
+
+
